@@ -1,0 +1,78 @@
+
+*** Running vivado
+    with args -log design_1_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source design_1_wrapper.tcl -notrace
+
+
+
+****** Vivado v2022.2 (64-bit)
+  **** SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
+  **** IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+
+source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 419.516 ; gain = 83.895
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ProgramasDoctorado/ip_repo/hog2_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ProgramasDoctorado/ip_repo/HOGv2.0_1.0'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ProgramasDoctorado/ip_repo/PropuestaCero_1.0'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
+Command: link_design -top design_1_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-454] Reading design checkpoint 'd:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_HOGv22_0_0/design_1_HOGv22_0_0.dcp' for cell 'design_1_i/HOGv22_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.dcp' for cell 'design_1_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.dcp' for cell 'design_1_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.dcp' for cell 'design_1_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'd:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0.dcp' for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.238 . Memory (MB): peak = 903.344 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1249 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2022.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Finished Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0.xdc] for cell 'design_1_i/processing_system7_0/inst'
+Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc] for cell 'design_1_i/rst_ps7_0_100M/U0'
+Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_i/axi_dma_0/U0'
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc:52]
+WARNING: [Vivado_Tcl 4-921] Waiver ID 'CDC-1' -to list should not be empty. [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc:56]
+WARNING: [Vivado_Tcl 4-919] Waiver ID 'CDC-1' -from list should not be empty. [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc:61]
+Finished Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0.xdc] for cell 'design_1_i/axi_dma_0/U0'
+Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_i/axi_dma_0/U0'
+Finished Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_clocks.xdc] for cell 'design_1_i/axi_dma_0/U0'
+INFO: [Project 1-1714] 3 XPM XDC files have been applied to the design.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1068.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 2 instances
+
+18 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:17 . Memory (MB): peak = 1068.371 ; gain = 608.086
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net design_1_i/HOGv22_0/U0/uut/B1 has multiple drivers: design_1_i/HOGv22_0/U0/HOGv2_0_v1_0_M00_AXIS_inst/axis_tvalid_delay_reg/Q, and design_1_i/HOGv22_0/U0/uut/hist_serialized_valid_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net design_1_i/HOGv22_0/U0/uut/U_sobel/s00_axis_tready has multiple drivers: design_1_i/HOGv22_0/U0/uut/U_sobel/ack_out_reg/Q, and design_1_i/HOGv22_0/U0/HOGv2_0_v1_0_S00_AXIS_inst/mst_exec_state_reg/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net design_1_i/HOGv22_0/U0/uut/m00_axis_tdata[0] has multiple drivers: design_1_i/HOGv22_0/U0/HOGv2_0_v1_0_M00_AXIS_inst/stream_data_out_reg[0]/Q, and design_1_i/HOGv22_0/U0/uut/hist_serialized_data_reg[0]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net design_1_i/HOGv22_0/U0/uut/m00_axis_tdata[1] has multiple drivers: design_1_i/HOGv22_0/U0/HOGv2_0_v1_0_M00_AXIS_inst/stream_data_out_reg[1]/Q, and design_1_i/HOGv22_0/U0/uut/hist_serialized_data_reg[1]/Q.
+ERROR: [DRC MDRV-1] Multiple Driver Nets: Net design_1_i/HOGv22_0/U0/uut/m00_axis_tdata[2] has multiple drivers: design_1_i/HOGv22_0/U0/HOGv2_0_v1_0_M00_AXIS_inst/stream_data_out_reg[2]/Q, and design_1_i/HOGv22_0/U0/uut/hist_serialized_data_reg[2]/Q.
+INFO: [Project 1-461] DRC finished with 5 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+ERROR: [Vivado_Tcl 4-78] Error(s) found during DRC. Opt_design not run.
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1093.473 ; gain = 25.102
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 3 Warnings, 0 Critical Warnings and 6 Errors encountered.
+opt_design failed
+ERROR: [Common 17-39] 'opt_design' failed due to earlier errors.
+
+INFO: [Common 17-206] Exiting Vivado at Thu Apr  3 17:41:57 2025...

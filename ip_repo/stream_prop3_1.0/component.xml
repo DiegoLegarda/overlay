@@ -1,0 +1,1113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spirit:component xmlns:xilinx="http://www.xilinx.com" xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <spirit:vendor>xilinx.com</spirit:vendor>
+  <spirit:library>user</spirit:library>
+  <spirit:name>stream_prop3</spirit:name>
+  <spirit:version>1.0</spirit:version>
+  <spirit:busInterfaces>
+    <spirit:busInterface>
+      <spirit:name>S00_AXIS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.S00_AXIS.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="interface" spirit:name="axis_rtl" spirit:version="1.0"/>
+      <spirit:master/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TDATA</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tdata</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TSTRB</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tstrb</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TLAST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tlast</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TVALID</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tvalid</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>TREADY</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_tready</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>WIZ_DATA_WIDTH</spirit:name>
+          <spirit:value spirit:format="long" spirit:id="BUSIFPARAM_VALUE.M00_AXIS.WIZ_DATA_WIDTH" spirit:choiceRef="choice_list_6fc15197">32</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXIS_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>M00_AXIS_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>m00_axis_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXIS_CLK.ASSOCIATED_BUSIF">M00_AXIS</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.M00_AXIS_CLK.ASSOCIATED_RESET">m00_axis_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXIS_RST</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="reset_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>RST</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_aresetn</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>POLARITY</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXIS_RST.POLARITY" spirit:choiceRef="choice_list_9d8b0d81">ACTIVE_LOW</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+    <spirit:busInterface>
+      <spirit:name>S00_AXIS_CLK</spirit:name>
+      <spirit:busType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock" spirit:version="1.0"/>
+      <spirit:abstractionType spirit:vendor="xilinx.com" spirit:library="signal" spirit:name="clock_rtl" spirit:version="1.0"/>
+      <spirit:slave/>
+      <spirit:portMaps>
+        <spirit:portMap>
+          <spirit:logicalPort>
+            <spirit:name>CLK</spirit:name>
+          </spirit:logicalPort>
+          <spirit:physicalPort>
+            <spirit:name>s00_axis_aclk</spirit:name>
+          </spirit:physicalPort>
+        </spirit:portMap>
+      </spirit:portMaps>
+      <spirit:parameters>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_BUSIF</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXIS_CLK.ASSOCIATED_BUSIF">S00_AXIS</spirit:value>
+        </spirit:parameter>
+        <spirit:parameter>
+          <spirit:name>ASSOCIATED_RESET</spirit:name>
+          <spirit:value spirit:id="BUSIFPARAM_VALUE.S00_AXIS_CLK.ASSOCIATED_RESET">s00_axis_aresetn</spirit:value>
+        </spirit:parameter>
+      </spirit:parameters>
+    </spirit:busInterface>
+  </spirit:busInterfaces>
+  <spirit:model>
+    <spirit:views>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlsynthesis</spirit:name>
+        <spirit:displayName>VHDL Synthesis</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>stream_prop3_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlsynthesis_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>3841d738</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_vhdlbehavioralsimulation</spirit:name>
+        <spirit:displayName>VHDL Simulation</spirit:displayName>
+        <spirit:envIdentifier>vhdlSource:vivado.xilinx.com:simulation</spirit:envIdentifier>
+        <spirit:language>vhdl</spirit:language>
+        <spirit:modelName>stream_prop3_v1_0</spirit:modelName>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>3841d738</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>xilinx_xpgui</spirit:name>
+        <spirit:displayName>UI Layout</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:xgui.ui</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>xilinx_xpgui_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>045296c4</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+      <spirit:view>
+        <spirit:name>bd_tcl</spirit:name>
+        <spirit:displayName>Block Diagram</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:block.diagram</spirit:envIdentifier>
+        <spirit:fileSetRef>
+          <spirit:localName>bd_tcl_view_fileset</spirit:localName>
+        </spirit:fileSetRef>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>viewChecksum</spirit:name>
+            <spirit:value>16328387</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:view>
+    </spirit:views>
+    <spirit:ports>
+      <spirit:port>
+        <spirit:name>smag</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">9</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>scont</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">6</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>scelda_out</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long">1</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC_VECTOR</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>ack</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>sReady_mag</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>STD_LOGIC</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>m00_axis_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tdata</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXIS_TDATA_WIDTH&apos;)) - 1)">31</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tstrb</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:vector>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="((spirit:decode(id(&apos;MODELPARAM_VALUE.C_S00_AXIS_TDATA_WIDTH&apos;)) / 8) - 1)">3</spirit:left>
+            <spirit:right spirit:format="long">0</spirit:right>
+          </spirit:vector>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic_vector</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tlast</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tvalid</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_tready</spirit:name>
+        <spirit:wire>
+          <spirit:direction>out</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_aclk</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+      <spirit:port>
+        <spirit:name>s00_axis_aresetn</spirit:name>
+        <spirit:wire>
+          <spirit:direction>in</spirit:direction>
+          <spirit:wireTypeDefs>
+            <spirit:wireTypeDef>
+              <spirit:typeName>std_logic</spirit:typeName>
+              <spirit:viewNameRef>xilinx_vhdlsynthesis</spirit:viewNameRef>
+              <spirit:viewNameRef>xilinx_vhdlbehavioralsimulation</spirit:viewNameRef>
+            </spirit:wireTypeDef>
+          </spirit:wireTypeDefs>
+        </spirit:wire>
+      </spirit:port>
+    </spirit:ports>
+    <spirit:modelParameters>
+      <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
+        <spirit:name>C_M00_AXIS_TDATA_WIDTH</spirit:name>
+        <spirit:displayName>C M00 AXIS TDATA WIDTH</spirit:displayName>
+        <spirit:description>Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXIS_TDATA_WIDTH" spirit:order="3" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_M00_AXIS_START_COUNT</spirit:name>
+        <spirit:displayName>C M00 AXIS START COUNT</spirit:displayName>
+        <spirit:description>Start count is the number of clock cycles the master will wait before initiating/issuing any transaction.</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_M00_AXIS_START_COUNT" spirit:order="4" spirit:minimum="1" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+      <spirit:modelParameter spirit:dataType="integer">
+        <spirit:name>C_S00_AXIS_TDATA_WIDTH</spirit:name>
+        <spirit:displayName>C S00 AXIS TDATA WIDTH</spirit:displayName>
+        <spirit:description>AXI4Stream sink: Data Width</spirit:description>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.C_S00_AXIS_TDATA_WIDTH" spirit:order="5" spirit:rangeType="long">32</spirit:value>
+      </spirit:modelParameter>
+    </spirit:modelParameters>
+  </spirit:model>
+  <spirit:choices>
+    <spirit:choice>
+      <spirit:name>choice_list_6fc15197</spirit:name>
+      <spirit:enumeration>32</spirit:enumeration>
+    </spirit:choice>
+    <spirit:choice>
+      <spirit:name>choice_list_9d8b0d81</spirit:name>
+      <spirit:enumeration>ACTIVE_HIGH</spirit:enumeration>
+      <spirit:enumeration>ACTIVE_LOW</spirit:enumeration>
+    </spirit:choice>
+  </spirit:choices>
+  <spirit:fileSets>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlsynthesis_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/FIFO_control.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/Hogpack.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/Histograma.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/binar.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/edge_detection.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fpupack.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/horizontal_gradient.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/lineq_wrapper.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/simplifi.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/topmodel.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/topmodule.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/vertical_gradient.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/stream_prop3_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_02c5d18c</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_vhdlbehavioralsimulation_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>src/FIFO_control.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/Hogpack.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/Histograma.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/binar.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/edge_detection.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/fpupack.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/horizontal_gradient.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/lineq_wrapper.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/simplifi.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/topmodel.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/topmodule.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>src/vertical_gradient.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+      <spirit:file>
+        <spirit:name>hdl/stream_prop3_v1_0.vhd</spirit:name>
+        <spirit:fileType>vhdlSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>xgui/stream_prop3_v1_0.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+        <spirit:userFileType>CHECKSUM_045296c4</spirit:userFileType>
+        <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
+      </spirit:file>
+    </spirit:fileSet>
+    <spirit:fileSet>
+      <spirit:name>bd_tcl_view_fileset</spirit:name>
+      <spirit:file>
+        <spirit:name>bd/bd.tcl</spirit:name>
+        <spirit:fileType>tclSource</spirit:fileType>
+      </spirit:file>
+    </spirit:fileSet>
+  </spirit:fileSets>
+  <spirit:description>My new AXI IP</spirit:description>
+  <spirit:parameters>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXIS_TDATA_WIDTH</spirit:name>
+      <spirit:displayName>C M00 AXIS TDATA WIDTH</spirit:displayName>
+      <spirit:description>Width of S_AXIS address bus. The slave accepts the read and write addresses of width C_M_AXIS_TDATA_WIDTH.</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXIS_TDATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="3">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_M00_AXIS_TDATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_M00_AXIS_START_COUNT</spirit:name>
+      <spirit:displayName>C M00 AXIS START COUNT</spirit:displayName>
+      <spirit:description>Start count is the number of clock cycles the master will wait before initiating/issuing any transaction.</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_M00_AXIS_START_COUNT" spirit:order="4" spirit:minimum="1" spirit:rangeType="long">32</spirit:value>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>C_S00_AXIS_TDATA_WIDTH</spirit:name>
+      <spirit:displayName>C S00 AXIS TDATA WIDTH</spirit:displayName>
+      <spirit:description>AXI4Stream sink: Data Width</spirit:description>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.C_S00_AXIS_TDATA_WIDTH" spirit:choiceRef="choice_list_6fc15197" spirit:order="5">32</spirit:value>
+      <spirit:vendorExtensions>
+        <xilinx:parameterInfo>
+          <xilinx:enablement>
+            <xilinx:isEnabled xilinx:id="PARAM_ENABLEMENT.C_S00_AXIS_TDATA_WIDTH">false</xilinx:isEnabled>
+          </xilinx:enablement>
+        </xilinx:parameterInfo>
+      </spirit:vendorExtensions>
+    </spirit:parameter>
+    <spirit:parameter>
+      <spirit:name>Component_Name</spirit:name>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.Component_Name" spirit:order="1">stream_prop3_v1_0</spirit:value>
+    </spirit:parameter>
+  </spirit:parameters>
+  <spirit:vendorExtensions>
+    <xilinx:coreExtensions>
+      <xilinx:supportedFamilies>
+        <xilinx:family xilinx:lifeCycle="Pre-Production">zynq</xilinx:family>
+      </xilinx:supportedFamilies>
+      <xilinx:taxonomies>
+        <xilinx:taxonomy>AXI_Peripheral</xilinx:taxonomy>
+      </xilinx:taxonomies>
+      <xilinx:displayName>stream_prop3_v1.0</xilinx:displayName>
+      <xilinx:coreRevision>26</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2025-01-31T22:50:15Z</xilinx:coreCreationDateTime>
+      <xilinx:tags>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23f2256a_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19921d87_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78bf4d7f_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c22a7e5_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e483047_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69001a05_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@791dd63d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30b53b64_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30aa10c_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26980909_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57c44cbd_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5aa9c494_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@173fd139_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49fe083e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b6bf3f3_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@734b3e85_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@499a9fdc_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@de9010c_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ec9fd25_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@592c07aa_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5cb2c17e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48e74ca9_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@242a9cba_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26c6e901_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e663fad_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dda58c3_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2de541fe_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d294795_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@235eab0c_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c08ed69_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16f7ca2e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c6e6192_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6fad14be_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35117652_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@74730f02_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@93e33df_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e20b8e1_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3dc936cb_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14d5f68c_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ceb0578_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65996394_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7715f40b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d09a8e3_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e829980_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11fd8ca0_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ef7b341_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21bc2801_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25c75310_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@519d1912_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@405ea95c_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3da34d34_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2424a53e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25e55789_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b78fdeb_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2dc44ac4_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@eedb287_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d279f3_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c2a03c7_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68d1b81d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e5f8e22_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@514eeef9_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62703a30_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@281e9630_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c686964_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2846365a_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4099ffee_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d3a2f34_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@455c7840_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2408a51c_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@52ac088_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@355108dc_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f2bbdb2_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48620443_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7990eeb9_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@687c54cc_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23d5a05f_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21599029_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b343819_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38d91614_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@429c1cf2_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3284ae12_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71968414_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a9c73bd_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f37bc37_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c67513b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@a22cae4_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b657558_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d45d351_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@587b4b2b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@724f2771_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4b65b75b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@762524f3_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3693b190_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14224981_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@522ba7f6_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@239b679_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@411ebccc_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f6b7bc6_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e5208ab_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6857bafb_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26c8d5a0_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@81d2173_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@370734d8_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6049d224_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34544e34_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1d128c7_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6612aa38_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@73996393_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7545d394_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@45322c0d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@710f8c59_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5b0a2f99_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5de50b01_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6c67c8b7_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2029124e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@db6ee89_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14311353_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3892f962_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6e514662_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@35a32bca_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bcda0c1_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@28fe999d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@d9dea58_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@771c0e87_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5be7657b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7b773c7e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2019d575_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a7ccf4f_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5239c8ed_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fc90c7_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@428bb436_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@bf69597_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3210ed7f_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13879932_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f2a4bf1_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a499a00_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@13001ed_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@106b9a2b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24c5c9a5_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@f5437a_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7154984e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1008d15_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@312aa0cf_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@768feb01_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d7cfaa6_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@57a650cc_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61b8b6b0_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3c2552b0_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1fbc4d67_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cb4d46a_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@162cda78_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c08e5bc_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5afc8d7e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42e4f53d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3d4708a6_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2d146d46_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26357111_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@258d2287_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@20160e9f_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2309d9a8_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6649b447_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c092c78_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@359b5c71_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2e771184_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@375ca909_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1a0ed18d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@379ea48b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@36d0f76e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49635e59_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@37aa95d2_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3fcc443f_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@71d038f2_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e426bf0_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@706c9445_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4967f478_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@78d97f38_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@77272491_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e19c00d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e68f53a_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c91570a_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@223b1e1b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@495b7515_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65294b0_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f4c5325_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a7b30cf_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70c7bffb_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@aaf8c33_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34dd4404_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40bdf82d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@310a12e9_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75ca19d7_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f9d8308_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@68ecdd97_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7867675f_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e7b3526_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7be94ff5_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6330606f_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@124fc9c5_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@373a7845_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1b7fd040_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ba6af47_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@401ba733_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@149df53f_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2546cead_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cebd1f9_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@61a4cda6_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@515bc51a_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@63d3d336_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e6d3025_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@205fead8_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@48bc52f8_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d517fbe_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ee50907_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@613d8baa_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3f7abd99_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c44578b_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a630727_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5e32fc20_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21279e76_ARCHIVE_LOCATION">d:/UNBVivado/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@60bea193_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@557fce28_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6836b01c_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@102961d6_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@55a01a80_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6d076468_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5486fd0d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ec489bc_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@65fc8a36_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c998983_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6df9ae12_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@472e455d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5743f1fa_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6cd8ff50_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a5949be_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1df9424b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@552ce15d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6aa3ec03_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1c35515e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@22e36ee1_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49d10ae_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f69c334_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@41abbbc8_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5f610eb6_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12008e63_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16034f01_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@70705600_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53601260_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@660fcb95_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19e794db_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@23fe40ab_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4098195a_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7e5ff789_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d39f827_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6adaa32d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38a4529e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b2fe2d9_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@15c6ba6d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7385ca59_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e074063_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cdb43ef_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6050233d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@32ee1cc3_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a7e82f9_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2aa0a5de_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4e18e6d9_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4d835f4c_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5c2bbc1f_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62651070_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@732e2d49_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3bbf83c_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7dc2f0a0_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@190e0843_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@e4ae653_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@18ddcbc5_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@466664c4_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7ab22a7e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@b82964b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@19704c0b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@49ea7a62_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@14fe777d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3e97f1f7_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@ca88aff_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7d7e9534_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2c698641_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@772416fb_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@693b1e56_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47ee4676_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2aacdd2b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67bdbee7_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@389060f0_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7a7e3c23_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5365a0e5_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c205af7_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7eadfe95_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2a05a6b9_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5d14cbfb_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51dc1e4_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b61c816_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@59dabda8_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1838b422_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3ec12ddc_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@16679067_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@578af9bf_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@67a79d4e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ca5a854_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@346c7410_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2eff72a7_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4ecef39c_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@25e21c7d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@277314fd_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@21357315_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4c319e4e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@30d860e5_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1e4a7b3b_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@792abf10_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@27afb4e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2986d4d1_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@7df86e57_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@11ae0b45_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@12c438b0_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@42d52c07_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@9fe19e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2b880269_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@69cb51e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@466e24a_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5868dfad_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@40e743da_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4f9e79e9_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@da9ab7e_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@51d55324_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@218065b1_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@47fcec60_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@6ca5287c_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@4a770781_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@75982d89_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@551e9c0d_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1386b2a7_ARCHIVE_LOCATION">c:/Users/DIEGO/Documents/UNB/ip_repo/stream_prop3_1.0</xilinx:tag>
+      </xilinx:tags>
+    </xilinx:coreExtensions>
+    <xilinx:packagingInfo>
+      <xilinx:xilinxVersion>2022.2</xilinx:xilinxVersion>
+      <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="29a15928"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="438cb11d"/>
+      <xilinx:checksum xilinx:scope="ports" xilinx:value="0eb87404"/>
+      <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="140b9c35"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="45821d00"/>
+    </xilinx:packagingInfo>
+  </spirit:vendorExtensions>
+</spirit:component>
