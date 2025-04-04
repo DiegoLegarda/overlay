@@ -2189,8 +2189,8 @@
       },
       "HOGv22_0": {
         "vlnv": "xilinx.com:user:HOGv22:1.0",
-        "xci_name": "design_1_HOGv22_0_0",
-        "xci_path": "ip\\design_1_HOGv22_0_0\\design_1_HOGv22_0_0.xci",
+        "xci_name": "design_1_HOGv22_0_1",
+        "xci_path": "ip\\design_1_HOGv22_0_1\\design_1_HOGv22_0_1.xci",
         "inst_hier_path": "HOGv22_0"
       }
     },
@@ -2203,8 +2203,8 @@
       },
       "axi_dma_0_M_AXIS_MM2S": {
         "interface_ports": [
-          "axi_dma_0/M_AXIS_MM2S",
-          "HOGv22_0/S00_AXIS"
+          "HOGv22_0/S00_AXIS",
+          "axi_dma_0/M_AXIS_MM2S"
         ]
       },
       "processing_system7_0_DDR": {
@@ -2244,8 +2244,8 @@
           "ps7_0_axi_periph/ACLK",
           "ps7_0_axi_periph/S00_ACLK",
           "ps7_0_axi_periph/M00_ACLK",
-          "HOGv22_0/s00_axis_aclk",
-          "HOGv22_0/m00_axis_aclk"
+          "HOGv22_0/m00_axis_aclk",
+          "HOGv22_0/s00_axis_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2261,8 +2261,8 @@
           "ps7_0_axi_periph/ARESETN",
           "ps7_0_axi_periph/S00_ARESETN",
           "ps7_0_axi_periph/M00_ARESETN",
-          "HOGv22_0/s00_axis_aresetn",
-          "HOGv22_0/m00_axis_aresetn"
+          "HOGv22_0/m00_axis_aresetn",
+          "HOGv22_0/s00_axis_aresetn"
         ]
       }
     },

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/ProgramasDoctorado/PrimerIP/PrimerIP.runs/synth_1'
+HD_PWD='D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
