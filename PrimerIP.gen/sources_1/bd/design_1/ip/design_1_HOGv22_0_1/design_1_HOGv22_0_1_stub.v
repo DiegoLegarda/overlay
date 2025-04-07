@@ -1,7 +1,7 @@
 // Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
-// Date        : Thu Apr  3 20:31:53 2025
+// Date        : Sun Apr  6 08:48:45 2025
 // Host        : W1125 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_HOGv22_0_1/design_1_HOGv22_0_1_stub.v
@@ -14,23 +14,23 @@
 // The synthesis directives are for Synopsys Synplify support to prevent IO buffer insertion.
 // Please paste the declaration into a Verilog source file or add the file as an additional source.
 (* x_core_info = "HOGv2_0_v1_0,Vivado 2022.2" *)
-module design_1_HOGv22_0_1(s00_axis_tdata, s00_axis_tstrb, 
-  s00_axis_tlast, s00_axis_tvalid, s00_axis_tready, s00_axis_aclk, s00_axis_aresetn, 
-  m00_axis_tdata, m00_axis_tstrb, m00_axis_tlast, m00_axis_tvalid, m00_axis_tready, 
-  m00_axis_aclk, m00_axis_aresetn)
-/* synthesis syn_black_box black_box_pad_pin="s00_axis_tdata[31:0],s00_axis_tstrb[3:0],s00_axis_tlast,s00_axis_tvalid,s00_axis_tready,s00_axis_aclk,s00_axis_aresetn,m00_axis_tdata[31:0],m00_axis_tstrb[3:0],m00_axis_tlast,m00_axis_tvalid,m00_axis_tready,m00_axis_aclk,m00_axis_aresetn" */;
+module design_1_HOGv22_0_1(s00_axis_aclk, s00_axis_aresetn, 
+  s00_axis_tready, s00_axis_tdata, s00_axis_tstrb, s00_axis_tlast, s00_axis_tvalid, 
+  m00_axis_aclk, m00_axis_aresetn, m00_axis_tvalid, m00_axis_tdata, m00_axis_tstrb, 
+  m00_axis_tlast, m00_axis_tready)
+/* synthesis syn_black_box black_box_pad_pin="s00_axis_aclk,s00_axis_aresetn,s00_axis_tready,s00_axis_tdata[31:0],s00_axis_tstrb[3:0],s00_axis_tlast,s00_axis_tvalid,m00_axis_aclk,m00_axis_aresetn,m00_axis_tvalid,m00_axis_tdata[31:0],m00_axis_tstrb[3:0],m00_axis_tlast,m00_axis_tready" */;
+  input s00_axis_aclk;
+  input s00_axis_aresetn;
+  output s00_axis_tready;
   input [31:0]s00_axis_tdata;
   input [3:0]s00_axis_tstrb;
   input s00_axis_tlast;
   input s00_axis_tvalid;
-  output s00_axis_tready;
-  input s00_axis_aclk;
-  input s00_axis_aresetn;
+  input m00_axis_aclk;
+  input m00_axis_aresetn;
+  output m00_axis_tvalid;
   output [31:0]m00_axis_tdata;
   output [3:0]m00_axis_tstrb;
   output m00_axis_tlast;
-  output m00_axis_tvalid;
   input m00_axis_tready;
-  input m00_axis_aclk;
-  input m00_axis_aresetn;
 endmodule

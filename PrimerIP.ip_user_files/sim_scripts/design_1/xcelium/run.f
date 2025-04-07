@@ -19,19 +19,6 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_processing_system7_0_0/design_1_processing_system7_0_0_sim_netlist.vhdl" \
-  "../../../bd/design_1/ipshared/f4e1/src/FIFO_control.vhd" \
-  "../../../bd/design_1/ipshared/f4e1/src/Hogpack.vhd" \
-  "../../../bd/design_1/ipshared/f4e1/src/HOG_Block_HIstogram.vhd" \
-  "../../../bd/design_1/ipshared/f4e1/hdl/HOGv2_0_v1_0_M00_AXIS.vhd" \
-  "../../../bd/design_1/ipshared/f4e1/hdl/HOGv2_0_v1_0_S00_AXIS.vhd" \
-  "../../../bd/design_1/ipshared/f4e1/src/Top_module.vhd" \
-  "../../../bd/design_1/ipshared/f4e1/src/block_formation.vhd" \
-  "../../../bd/design_1/ipshared/f4e1/src/edge_detection.vhd" \
-  "../../../bd/design_1/ipshared/f4e1/src/horizontal_gradient.vhd" \
-  "../../../bd/design_1/ipshared/f4e1/src/vertical_gradient.vhd" \
-  "../../../bd/design_1/ipshared/f4e1/hdl/HOGv2_0_v1_0.vhd" \
-  "../../../bd/design_1/ip/design_1_HOGv22_0_0/sim/design_1_HOGv22_0_0.vhd" \
-  "../../../bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_sim_netlist.vhdl" \
 -endlib
 -makelib xcelium_lib/lib_cdc_v1_0_2 \
   "../../../../PrimerIP.gen/sources_1/bd/design_1/ipshared/ef1e/hdl/lib_cdc_v1_0_rfs.vhd" \
@@ -41,6 +28,17 @@
 -endlib
 -makelib xcelium_lib/xil_defaultlib \
   "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+  "../../../bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_sim_netlist.vhdl" \
+  "../../../bd/design_1/ipshared/df1e/src/FIFO_control.vhd" \
+  "../../../bd/design_1/ipshared/df1e/src/Hogpack.vhd" \
+  "../../../bd/design_1/ipshared/df1e/src/HOG_Block_HIstogram.vhd" \
+  "../../../bd/design_1/ipshared/df1e/src/Top_module.vhd" \
+  "../../../bd/design_1/ipshared/df1e/src/block_formation.vhd" \
+  "../../../bd/design_1/ipshared/df1e/src/edge_detection.vhd" \
+  "../../../bd/design_1/ipshared/df1e/src/horizontal_gradient.vhd" \
+  "../../../bd/design_1/ipshared/df1e/src/vertical_gradient.vhd" \
+  "../../../bd/design_1/ipshared/df1e/hdl/HOGv2_0_v1_0.vhd" \
+  "../../../bd/design_1/ip/design_1_HOGv22_0_1/sim/design_1_HOGv22_0_1.vhd" \
   "../../../bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_sim_netlist.vhdl" \
   "../../../bd/design_1/sim/design_1.vhd" \
 -endlib

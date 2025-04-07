@@ -2244,8 +2244,8 @@
           "ps7_0_axi_periph/ACLK",
           "ps7_0_axi_periph/S00_ACLK",
           "ps7_0_axi_periph/M00_ACLK",
-          "HOGv22_0/m00_axis_aclk",
-          "HOGv22_0/s00_axis_aclk"
+          "HOGv22_0/s00_axis_aclk",
+          "HOGv22_0/m00_axis_aclk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2261,8 +2261,8 @@
           "ps7_0_axi_periph/ARESETN",
           "ps7_0_axi_periph/S00_ARESETN",
           "ps7_0_axi_periph/M00_ARESETN",
-          "HOGv22_0/m00_axis_aresetn",
-          "HOGv22_0/s00_axis_aresetn"
+          "HOGv22_0/s00_axis_aresetn",
+          "HOGv22_0/m00_axis_aresetn"
         ]
       }
     },

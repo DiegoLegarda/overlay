@@ -132,7 +132,7 @@ OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
   set_property webtalk.parent_dir D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.cache/wt [current_project]
   set_property parent.project_path D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.xpr [current_project]
-  set_property ip_repo_paths d:/ProgramasDoctorado/PrimerIP/overlay/ip_repo [current_project]
+  set_property ip_repo_paths D:/ProgramasDoctorado/PrimerIP/overlay/ip_repo [current_project]
   update_ip_catalog
   set_property ip_output_repo D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
@@ -275,4 +275,35 @@ OPTRACE "route_design write_checkpoint" END { }
 
 OPTRACE "route_design misc" END { }
 OPTRACE "Phase: Route Design" END { }
+OPTRACE "Phase: Write Bitstream" START { ROLLUP_AUTO }
+OPTRACE "write_bitstream setup" START { }
+start_step write_bitstream
+set ACTIVE_STEP write_bitstream
+set rc [catch {
+  create_msg_db write_bitstream.pb
+OPTRACE "read constraints: write_bitstream" START { }
+OPTRACE "read constraints: write_bitstream" END { }
+  set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
+  catch { write_mem_info -force -no_partial_mmi design_1_wrapper.mmi }
+OPTRACE "write_bitstream setup" END { }
+OPTRACE "write_bitstream" START { }
+  write_bitstream -force design_1_wrapper.bit 
+OPTRACE "write_bitstream" END { }
+OPTRACE "write_bitstream misc" START { }
+OPTRACE "read constraints: write_bitstream_post" START { }
+OPTRACE "read constraints: write_bitstream_post" END { }
+  catch {write_debug_probes -quiet -force design_1_wrapper}
+  catch {file copy -force design_1_wrapper.ltx debug_nets.ltx}
+  close_msg_db -file write_bitstream.pb
+} RESULT]
+if {$rc} {
+  step_failed write_bitstream
+  return -code error $RESULT
+} else {
+  end_step write_bitstream
+  unset ACTIVE_STEP 
+}
+
+OPTRACE "write_bitstream misc" END { }
+OPTRACE "Phase: Write Bitstream" END { }
 OPTRACE "impl_1" END { }
