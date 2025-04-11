@@ -10,19 +10,7 @@
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source design_1_HOGv22_0_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 419.367 ; gain = 80.590
-INFO: [IP_Flow 19-234] Refreshing IP repositories
-INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ProgramasDoctorado/PrimerIP/overlay/ip_repo'.
-INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
-INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_HOGv22_0_1
-Command: synth_design -top design_1_HOGv22_0_1 -part xc7z020clg400-1 -incremental_mode off -mode out_of_context
-Starting synth_design
-Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
-INFO: [Device 21-403] Loading part xc7z020clg400-1
-INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
-INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 6832
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 424.316 ; gain = 84.816
 
 *** Running vivado
     with args -log design_1_HOGv22_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_HOGv22_0_1.tcl
@@ -35,7 +23,7 @@ INFO: [Synth 8-7075] Helper process launched with PID 6832
     ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 
 source design_1_HOGv22_0_1.tcl -notrace
-create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 419.648 ; gain = 83.695
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 425.125 ; gain = 84.242
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ProgramasDoctorado/PrimerIP/overlay/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
@@ -47,71 +35,82 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 12996
+INFO: [Synth 8-7075] Helper process launched with PID 1256
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1263.852 ; gain = 407.523
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1270.660 ; gain = 408.547
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_HOGv22_0_1' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_HOGv22_0_1/synth/design_1_HOGv22_0_1.vhd:75]
 	Parameter C_S00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXIS_TDATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_M00_AXIS_START_COUNT bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'HOGv2_0_v1_0' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/hdl/HOGv2_0_v1_0.vhd:5' bound to instance 'U0' of component 'HOGv2_0_v1_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_HOGv22_0_1/synth/design_1_HOGv22_0_1.vhd:130]
-INFO: [Synth 8-638] synthesizing module 'HOGv2_0_v1_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/hdl/HOGv2_0_v1_0.vhd:47]
-INFO: [Synth 8-3491] module 'top_hog_axi' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:11' bound to instance 'uut' of component 'top_hog_axi' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/hdl/HOGv2_0_v1_0.vhd:140]
-INFO: [Synth 8-638] synthesizing module 'top_hog_axi' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:24]
+INFO: [Synth 8-3491] module 'HOGv2_0_v1_0' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/hdl/HOGv2_0_v1_0.vhd:5' bound to instance 'U0' of component 'HOGv2_0_v1_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_HOGv22_0_1/synth/design_1_HOGv22_0_1.vhd:130]
+INFO: [Synth 8-638] synthesizing module 'HOGv2_0_v1_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/hdl/HOGv2_0_v1_0.vhd:47]
+INFO: [Synth 8-3491] module 'top_hog_axi' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:11' bound to instance 'uut' of component 'top_hog_axi' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/hdl/HOGv2_0_v1_0.vhd:140]
+INFO: [Synth 8-638] synthesizing module 'top_hog_axi' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:24]
 	Parameter MBW bound to: 8 - type: integer 
 	Parameter PBW bound to: 8 - type: integer 
 	Parameter HP bound to: 34 - type: integer 
-INFO: [Synth 8-3491] module 'edge_detection' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/edge_detection.vhd:10' bound to instance 'U_sobel' of component 'edge_detection' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:151]
-INFO: [Synth 8-638] synthesizing module 'edge_detection' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/edge_detection.vhd:27]
+INFO: [Synth 8-3491] module 'edge_detection' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/edge_detection.vhd:10' bound to instance 'U_sobel' of component 'edge_detection' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:151]
+INFO: [Synth 8-638] synthesizing module 'edge_detection' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/edge_detection.vhd:27]
 	Parameter PBW bound to: 8 - type: integer 
 	Parameter HP bound to: 34 - type: integer 
-INFO: [Synth 8-3491] module 'FIFO_control' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/FIFO_control.vhd:9' bound to instance 'A1' of component 'FIFO_control' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/edge_detection.vhd:148]
-INFO: [Synth 8-638] synthesizing module 'FIFO_control' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/FIFO_control.vhd:31]
-INFO: [Synth 8-256] done synthesizing module 'FIFO_control' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/FIFO_control.vhd:31]
+INFO: [Synth 8-3491] module 'FIFO_control' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/FIFO_control.vhd:9' bound to instance 'A1' of component 'FIFO_control' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/edge_detection.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'FIFO_control' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/FIFO_control.vhd:31]
+INFO: [Synth 8-256] done synthesizing module 'FIFO_control' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/FIFO_control.vhd:31]
 	Parameter MBW bound to: 8 - type: integer 
 	Parameter PBW bound to: 8 - type: integer 
 	Parameter HP bound to: 34 - type: integer 
-INFO: [Synth 8-3491] module 'horizontal_gradient' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/horizontal_gradient.vhd:10' bound to instance 'A2' of component 'horizontal_gradient' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/edge_detection.vhd:165]
-INFO: [Synth 8-638] synthesizing module 'horizontal_gradient' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/horizontal_gradient.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'horizontal_gradient' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/horizontal_gradient.vhd:23]
+INFO: [Synth 8-3491] module 'horizontal_gradient' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/horizontal_gradient.vhd:10' bound to instance 'A2' of component 'horizontal_gradient' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/edge_detection.vhd:165]
+INFO: [Synth 8-638] synthesizing module 'horizontal_gradient' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/horizontal_gradient.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'horizontal_gradient' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/horizontal_gradient.vhd:23]
 	Parameter MBW bound to: 8 - type: integer 
 	Parameter PBW bound to: 8 - type: integer 
 	Parameter HP bound to: 34 - type: integer 
-INFO: [Synth 8-3491] module 'vertical_gradient' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/vertical_gradient.vhd:10' bound to instance 'A3' of component 'vertical_gradient' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/edge_detection.vhd:177]
-INFO: [Synth 8-638] synthesizing module 'vertical_gradient' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/vertical_gradient.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'vertical_gradient' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/vertical_gradient.vhd:23]
-INFO: [Synth 8-256] done synthesizing module 'edge_detection' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/edge_detection.vhd:27]
+INFO: [Synth 8-3491] module 'vertical_gradient' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/vertical_gradient.vhd:10' bound to instance 'A3' of component 'vertical_gradient' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/edge_detection.vhd:177]
+INFO: [Synth 8-638] synthesizing module 'vertical_gradient' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/vertical_gradient.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'vertical_gradient' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/vertical_gradient.vhd:23]
+INFO: [Synth 8-256] done synthesizing module 'edge_detection' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/edge_detection.vhd:27]
 	Parameter NUM_BINS bound to: 9 - type: integer 
 	Parameter BIN_WIDTH bound to: 19 - type: integer 
 	Parameter FIFO_SIZE bound to: 8 - type: integer 
-INFO: [Synth 8-3491] module 'hog_cell_histogram_with_fifo' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/HOG_Block_HIstogram.vhd:13' bound to instance 'hog_cell_histogram_inst' of component 'hog_cell_histogram_with_fifo' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:171]
-INFO: [Synth 8-638] synthesizing module 'hog_cell_histogram_with_fifo' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/HOG_Block_HIstogram.vhd:38]
-INFO: [Synth 8-256] done synthesizing module 'hog_cell_histogram_with_fifo' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/HOG_Block_HIstogram.vhd:38]
+INFO: [Synth 8-3491] module 'hog_cell_histogram_with_fifo' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/HOG_Block_HIstogram.vhd:13' bound to instance 'hog_cell_histogram_inst' of component 'hog_cell_histogram_with_fifo' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:171]
+INFO: [Synth 8-638] synthesizing module 'hog_cell_histogram_with_fifo' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/HOG_Block_HIstogram.vhd:38]
+INFO: [Synth 8-256] done synthesizing module 'hog_cell_histogram_with_fifo' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/HOG_Block_HIstogram.vhd:38]
 	Parameter NUM_BINS bound to: 9 - type: integer 
 	Parameter BIN_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-3491] module 'hog_block_histogram' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/block_formation.vhd:11' bound to instance 'hog_block_histogram_inst' of component 'hog_block_histogram' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:193]
-INFO: [Synth 8-638] synthesizing module 'hog_block_histogram' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/block_formation.vhd:27]
-INFO: [Synth 8-226] default block is never used [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/block_formation.vhd:60]
-INFO: [Synth 8-256] done synthesizing module 'hog_block_histogram' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/block_formation.vhd:27]
-INFO: [Synth 8-256] done synthesizing module 'top_hog_axi' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:24]
-INFO: [Synth 8-256] done synthesizing module 'HOGv2_0_v1_0' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/hdl/HOGv2_0_v1_0.vhd:47]
+INFO: [Synth 8-3491] module 'hog_block_histogram' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/block_formation.vhd:11' bound to instance 'hog_block_histogram_inst' of component 'hog_block_histogram' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:193]
+INFO: [Synth 8-638] synthesizing module 'hog_block_histogram' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/block_formation.vhd:27]
+	Parameter NUM_FEATURES bound to: 36 - type: integer 
+	Parameter NUM_BINS bound to: 9 - type: integer 
+	Parameter BIN_WIDTH bound to: 16 - type: integer 
+	Parameter BLOCK_SIZE bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'multiplexor' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/multiplexor.vhd:28' bound to instance 'inst_multiplexor' of component 'multiplexor' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/block_formation.vhd:64]
+INFO: [Synth 8-638] synthesizing module 'multiplexor' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/multiplexor.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'multiplexor' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/multiplexor.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'hog_block_histogram' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/block_formation.vhd:27]
+INFO: [Synth 8-256] done synthesizing module 'top_hog_axi' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:24]
+INFO: [Synth 8-256] done synthesizing module 'HOGv2_0_v1_0' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/hdl/HOGv2_0_v1_0.vhd:47]
 INFO: [Synth 8-256] done synthesizing module 'design_1_HOGv22_0_1' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_HOGv22_0_1/synth/design_1_HOGv22_0_1.vhd:75]
-WARNING: [Synth 8-6014] Unused sequential element s_cont_pixel_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/edge_detection.vhd:136]
-WARNING: [Synth 8-6014] Unused sequential element bin_complete_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/HOG_Block_HIstogram.vhd:191]
-WARNING: [Synth 8-6014] Unused sequential element aux_ratio_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/HOG_Block_HIstogram.vhd:219]
-WARNING: [Synth 8-6014] Unused sequential element calc_complete_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/HOG_Block_HIstogram.vhd:352]
-WARNING: [Synth 8-6014] Unused sequential element s_average_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/block_formation.vhd:52]
-WARNING: [Synth 8-6014] Unused sequential element celdas_X_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:228]
-WARNING: [Synth 8-6014] Unused sequential element celdas_Y_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:229]
-WARNING: [Synth 8-6014] Unused sequential element top_left_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:230]
-WARNING: [Synth 8-6014] Unused sequential element top_right_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:231]
-WARNING: [Synth 8-6014] Unused sequential element bottom_left_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:232]
-WARNING: [Synth 8-6014] Unused sequential element bottom_right_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:233]
-WARNING: [Synth 8-3848] Net s_fin_cel_edge in module/entity top_hog_axi does not have driver. [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/src/Top_module.vhd:60]
-WARNING: [Synth 8-3848] Net m00_axis_tstrb in module/entity HOGv2_0_v1_0 does not have driver. [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/hdl/HOGv2_0_v1_0.vhd:41]
-WARNING: [Synth 8-3848] Net m00_axis_tlast in module/entity HOGv2_0_v1_0 does not have driver. [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/df1e/hdl/HOGv2_0_v1_0.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element s_cont_pixel_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/edge_detection.vhd:136]
+WARNING: [Synth 8-6014] Unused sequential element bin_complete_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/HOG_Block_HIstogram.vhd:191]
+WARNING: [Synth 8-6014] Unused sequential element aux_ratio_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/HOG_Block_HIstogram.vhd:219]
+WARNING: [Synth 8-6014] Unused sequential element calc_complete_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/HOG_Block_HIstogram.vhd:352]
+WARNING: [Synth 8-3848] Net ready in module/entity multiplexor does not have driver. [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/multiplexor.vhd:42]
+WARNING: [Synth 8-6014] Unused sequential element s_average_ready_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/block_formation.vhd:117]
+WARNING: [Synth 8-6014] Unused sequential element celdas_X_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:228]
+WARNING: [Synth 8-6014] Unused sequential element celdas_Y_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:229]
+WARNING: [Synth 8-6014] Unused sequential element top_left_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:230]
+WARNING: [Synth 8-6014] Unused sequential element top_right_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:231]
+WARNING: [Synth 8-6014] Unused sequential element bottom_left_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:232]
+WARNING: [Synth 8-6014] Unused sequential element bottom_right_reg was removed.  [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:233]
+WARNING: [Synth 8-3848] Net s_fin_cel_edge in module/entity top_hog_axi does not have driver. [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/src/Top_module.vhd:60]
+WARNING: [Synth 8-3848] Net m00_axis_tstrb in module/entity HOGv2_0_v1_0 does not have driver. [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/hdl/HOGv2_0_v1_0.vhd:41]
+WARNING: [Synth 8-3848] Net m00_axis_tlast in module/entity HOGv2_0_v1_0 does not have driver. [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/6c45/hdl/HOGv2_0_v1_0.vhd:42]
+WARNING: [Synth 8-7129] Port ready in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port clk in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port rst in module multiplexor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port start in module multiplexor is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m00_axis_tstrb[3] in module HOGv2_0_v1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m00_axis_tstrb[2] in module HOGv2_0_v1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m00_axis_tstrb[1] in module HOGv2_0_v1_0 is either unconnected or has no load
@@ -150,59 +149,49 @@ WARNING: [Synth 8-7129] Port m00_axis_aclk in module HOGv2_0_v1_0 is either unco
 WARNING: [Synth 8-7129] Port m00_axis_aresetn in module HOGv2_0_v1_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m00_axis_tready in module HOGv2_0_v1_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1398.641 ; gain = 542.312
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1405.992 ; gain = 543.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1398.641 ; gain = 542.312
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1405.992 ; gain = 543.879
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1398.641 ; gain = 542.312
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1405.992 ; gain = 543.879
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 1398.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.096 . Memory (MB): peak = 1405.992 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1506.871 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1447.035 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.160 . Memory (MB): peak = 1506.871 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.167 . Memory (MB): peak = 1447.301 ; gain = 0.266
 INFO: [Designutils 20-5008] Incremental synthesis strategy off
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1506.871 ; gain = 650.543
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1447.301 ; gain = 585.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1506.871 ; gain = 650.543
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1447.301 ; gain = 585.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 1506.871 ; gain = 650.543
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1447.301 ; gain = 585.188
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-802] inferred FSM for state register 'step_counter_reg' in module 'hog_block_histogram'
----------------------------------------------------------------------------------------------------
-                   State |                     New Encoding |                Previous Encoding 
----------------------------------------------------------------------------------------------------
-                  iSTATE |                             0001 |                               00
-                 iSTATE0 |                             0010 |                               01
-                 iSTATE1 |                             0100 |                               10
-                 iSTATE2 |                             1000 |                               11
----------------------------------------------------------------------------------------------------
-INFO: [Synth 8-3354] encoded FSM with state register 'step_counter_reg' using encoding 'one-hot' in module 'hog_block_histogram'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1506.871 ; gain = 650.543
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 1447.301 ; gain = 585.188
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -211,7 +200,7 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input   32 Bit       Adders := 5     
 	   2 Input   31 Bit       Adders := 3     
-	  37 Input   23 Bit       Adders := 1     
+	  36 Input   25 Bit       Adders := 1     
 	   2 Input   21 Bit       Adders := 1     
 	   3 Input   10 Bit       Adders := 3     
 	   2 Input   10 Bit       Adders := 3     
@@ -222,9 +211,9 @@ Detailed RTL Component Info :
 	   2 Input    2 Bit       Adders := 3     
 +---Registers : 
 	              568 Bit    Registers := 1     
-	               36 Bit    Registers := 2     
+	               36 Bit    Registers := 1     
 	               32 Bit    Registers := 4     
-	               23 Bit    Registers := 1     
+	               25 Bit    Registers := 1     
 	               21 Bit    Registers := 180   
 	               16 Bit    Registers := 1     
 	               10 Bit    Registers := 9     
@@ -232,16 +221,13 @@ Detailed RTL Component Info :
 	                6 Bit    Registers := 1     
 	                5 Bit    Registers := 2     
 	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 4     
-	                1 Bit    Registers := 16    
+	                1 Bit    Registers := 17    
 +---Muxes : 
 	   2 Input  568 Bit        Muxes := 1     
-	   4 Input   36 Bit        Muxes := 1     
-	   2 Input   36 Bit        Muxes := 1     
 	   2 Input   32 Bit        Muxes := 18    
 	   2 Input   31 Bit        Muxes := 3     
-	   2 Input   23 Bit        Muxes := 2     
-	   4 Input   23 Bit        Muxes := 1     
 	   2 Input   21 Bit        Muxes := 72    
 	   2 Input   10 Bit        Muxes := 7     
 	   2 Input    7 Bit        Muxes := 1     
@@ -250,11 +236,13 @@ Detailed RTL Component Info :
 	   2 Input    5 Bit        Muxes := 4     
 	   2 Input    4 Bit        Muxes := 7     
 	   2 Input    3 Bit        Muxes := 6     
+	   3 Input    3 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 1     
 	   3 Input    2 Bit        Muxes := 1     
 	   2 Input    2 Bit        Muxes := 4     
-	   2 Input    1 Bit        Muxes := 182   
+	   2 Input    1 Bit        Muxes := 180   
 	   3 Input    1 Bit        Muxes := 1     
-	   4 Input    1 Bit        Muxes := 4     
+	   6 Input    1 Bit        Muxes := 4     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -309,25 +297,25 @@ WARNING: [Synth 8-7129] Port m00_axis_aclk in module design_1_HOGv22_0_1 is eith
 WARNING: [Synth 8-7129] Port m00_axis_aresetn in module design_1_HOGv22_0_1 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port m00_axis_tready in module design_1_HOGv22_0_1 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:37 ; elapsed = 00:01:41 . Memory (MB): peak = 1619.988 ; gain = 763.660
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:22 ; elapsed = 00:01:24 . Memory (MB): peak = 1614.352 ; gain = 752.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:42 ; elapsed = 00:01:46 . Memory (MB): peak = 1619.988 ; gain = 763.660
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 1614.352 ; gain = 752.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:01:42 ; elapsed = 00:01:46 . Memory (MB): peak = 1619.988 ; gain = 763.660
+Finished Timing Optimization : Time (s): cpu = 00:01:27 ; elapsed = 00:01:29 . Memory (MB): peak = 1614.352 ; gain = 752.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:01:45 ; elapsed = 00:01:49 . Memory (MB): peak = 1619.988 ; gain = 763.660
+Finished Technology Mapping : Time (s): cpu = 00:01:30 ; elapsed = 00:01:32 . Memory (MB): peak = 1614.352 ; gain = 752.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -345,37 +333,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:50 ; elapsed = 00:01:55 . Memory (MB): peak = 1619.988 ; gain = 763.660
+Finished IO Insertion : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1614.352 ; gain = 752.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:50 ; elapsed = 00:01:55 . Memory (MB): peak = 1619.988 ; gain = 763.660
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1614.352 ; gain = 752.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:51 ; elapsed = 00:01:55 . Memory (MB): peak = 1619.988 ; gain = 763.660
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:35 ; elapsed = 00:01:37 . Memory (MB): peak = 1614.352 ; gain = 752.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:51 ; elapsed = 00:01:55 . Memory (MB): peak = 1619.988 ; gain = 763.660
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:35 ; elapsed = 00:01:38 . Memory (MB): peak = 1614.352 ; gain = 752.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:51 ; elapsed = 00:01:56 . Memory (MB): peak = 1619.988 ; gain = 763.660
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 1614.352 ; gain = 752.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 1619.988 ; gain = 763.660
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 1614.352 ; gain = 752.238
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -405,44 +393,43 @@ Report Cell Usage:
 +------+--------+------+
 |      |Cell    |Count |
 +------+--------+------+
-|1     |CARRY4  |   556|
+|1     |CARRY4  |   550|
 |2     |LUT1    |    77|
-|3     |LUT2    |   846|
-|4     |LUT3    |  1423|
-|5     |LUT4    |  1380|
-|6     |LUT5    |   182|
-|7     |LUT6    |  6069|
-|8     |MUXF7   |   520|
+|3     |LUT2    |   815|
+|4     |LUT3    |  1411|
+|5     |LUT4    |  1345|
+|6     |LUT5    |   183|
+|7     |LUT6    |  6087|
+|8     |MUXF7   |   504|
 |9     |MUXF8   |   210|
 |10    |SRLC32E |    16|
 |11    |FDCE    |   117|
-|12    |FDRE    |  4147|
-|13    |FDSE    |     1|
+|12    |FDRE    |  4112|
 +------+--------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 1619.988 ; gain = 763.660
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 1614.352 ; gain = 752.238
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 38 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:01:39 ; elapsed = 00:01:52 . Memory (MB): peak = 1619.988 ; gain = 655.430
-Synthesis Optimization Complete : Time (s): cpu = 00:01:52 ; elapsed = 00:01:56 . Memory (MB): peak = 1619.988 ; gain = 763.660
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:26 ; elapsed = 00:01:35 . Memory (MB): peak = 1614.352 ; gain = 710.930
+Synthesis Optimization Complete : Time (s): cpu = 00:01:36 ; elapsed = 00:01:38 . Memory (MB): peak = 1614.352 ; gain = 752.238
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.164 . Memory (MB): peak = 1619.988 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 1286 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.163 . Memory (MB): peak = 1614.352 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1264 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1619.988 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1614.352 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 62fd43b5
+Synth Design complete, checksum: 57c18455
 INFO: [Common 17-83] Releasing license: Synthesis
-50 Infos, 89 Warnings, 0 Critical Warnings and 0 Errors encountered.
+50 Infos, 94 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:58 ; elapsed = 00:02:03 . Memory (MB): peak = 1619.988 ; gain = 1164.875
+synth_design: Time (s): cpu = 00:01:42 ; elapsed = 00:01:45 . Memory (MB): peak = 1614.352 ; gain = 1154.625
 INFO: [Common 17-1381] The checkpoint 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/design_1_HOGv22_0_1_synth_1/design_1_HOGv22_0_1.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_HOGv22_0_1, cache-ID = 5c7952e50ae61362
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_HOGv22_0_1, cache-ID = 13f22c1d980f722d
 INFO: [Coretcl 2-1174] Renamed 8 cell refs.
 INFO: [Common 17-1381] The checkpoint 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/design_1_HOGv22_0_1_synth_1/design_1_HOGv22_0_1.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_HOGv22_0_1_utilization_synth.rpt -pb design_1_HOGv22_0_1_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Apr  6 08:48:46 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 11 17:26:01 2025...
