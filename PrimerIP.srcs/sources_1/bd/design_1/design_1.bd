@@ -19,7 +19,8 @@
           "auto_pc": ""
         }
       },
-      "HOGv22_0": ""
+      "HOGv22_0": "",
+      "xlconcat_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -220,7 +221,7 @@
             "value": "10.000000"
           },
           "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "8.000000"
+            "value": "100.000000"
           },
           "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "10.000000"
@@ -304,7 +305,7 @@
             "value": "0"
           },
           "PCW_CLK0_FREQ": {
-            "value": "8000000"
+            "value": "100000000"
           },
           "PCW_CLK1_FREQ": {
             "value": "10000000"
@@ -314,6 +315,18 @@
           },
           "PCW_CLK3_FREQ": {
             "value": "10000000"
+          },
+          "PCW_CORE0_FIQ_INTR": {
+            "value": "0"
+          },
+          "PCW_CORE0_IRQ_INTR": {
+            "value": "0"
+          },
+          "PCW_CORE1_FIQ_INTR": {
+            "value": "0"
+          },
+          "PCW_CORE1_IRQ_INTR": {
+            "value": "0"
           },
           "PCW_CPU_CPU_6X4X_MAX_RANGE": {
             "value": "667"
@@ -604,7 +617,7 @@
             "value": "TRUE"
           },
           "PCW_FPGA0_PERIPHERAL_FREQMHZ": {
-            "value": "8"
+            "value": "100"
           },
           "PCW_FPGA1_PERIPHERAL_FREQMHZ": {
             "value": "50"
@@ -647,6 +660,9 @@
           },
           "PCW_INCLUDE_ACP_TRANS_CHECK": {
             "value": "0"
+          },
+          "PCW_IRQ_F2P_INTR": {
+            "value": "1"
           },
           "PCW_IRQ_F2P_MODE": {
             "value": "DIRECT"
@@ -1251,6 +1267,24 @@
           "PCW_OVERRIDE_BASIC_CLOCK": {
             "value": "0"
           },
+          "PCW_P2F_ENET0_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_GPIO_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_QSPI_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_SDIO0_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_UART0_INTR": {
+            "value": "0"
+          },
+          "PCW_P2F_USB0_INTR": {
+            "value": "0"
+          },
           "PCW_PACKAGE_DDR_BOARD_DELAY0": {
             "value": "0.279"
           },
@@ -1741,7 +1775,7 @@
             "value": "0"
           },
           "PCW_USE_FABRIC_INTERRUPT": {
-            "value": "0"
+            "value": "1"
           },
           "PCW_USE_HIGH_OCM": {
             "value": "0"
@@ -2192,6 +2226,12 @@
         "xci_name": "design_1_HOGv22_0_1",
         "xci_path": "ip\\design_1_HOGv22_0_1\\design_1_HOGv22_0_1.xci",
         "inst_hier_path": "HOGv22_0"
+      },
+      "xlconcat_0": {
+        "vlnv": "xilinx.com:ip:xlconcat:2.1",
+        "xci_name": "design_1_xlconcat_0_0",
+        "xci_path": "ip\\design_1_xlconcat_0_0\\design_1_xlconcat_0_0.xci",
+        "inst_hier_path": "xlconcat_0"
       }
     },
     "interface_nets": {
@@ -2233,19 +2273,37 @@
       }
     },
     "nets": {
+      "axi_dma_0_m_axis_mm2s_tvalid": {
+        "ports": [
+          "axi_dma_0/m_axis_mm2s_tvalid",
+          "HOGv22_0/s00_axis_tvalid"
+        ]
+      },
+      "axi_dma_0_mm2s_introut": {
+        "ports": [
+          "axi_dma_0/mm2s_introut",
+          "xlconcat_0/In0"
+        ]
+      },
+      "axi_dma_0_s2mm_introut": {
+        "ports": [
+          "axi_dma_0/s2mm_introut",
+          "xlconcat_0/In1"
+        ]
+      },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
-          "processing_system7_0/M_AXI_GP0_ACLK",
-          "rst_ps7_0_100M/slowest_sync_clk",
           "axi_dma_0/s_axi_lite_aclk",
-          "axi_dma_0/m_axi_mm2s_aclk",
-          "axi_dma_0/m_axi_s2mm_aclk",
-          "ps7_0_axi_periph/ACLK",
-          "ps7_0_axi_periph/S00_ACLK",
           "ps7_0_axi_periph/M00_ACLK",
+          "HOGv22_0/m00_axis_aclk",
+          "axi_dma_0/m_axi_s2mm_aclk",
           "HOGv22_0/s00_axis_aclk",
-          "HOGv22_0/m00_axis_aclk"
+          "axi_dma_0/m_axi_mm2s_aclk",
+          "processing_system7_0/M_AXI_GP0_ACLK",
+          "ps7_0_axi_periph/S00_ACLK",
+          "ps7_0_axi_periph/ACLK",
+          "rst_ps7_0_100M/slowest_sync_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2263,6 +2321,12 @@
           "ps7_0_axi_periph/M00_ARESETN",
           "HOGv22_0/s00_axis_aresetn",
           "HOGv22_0/m00_axis_aresetn"
+        ]
+      },
+      "xlconcat_0_dout": {
+        "ports": [
+          "xlconcat_0/dout",
+          "processing_system7_0/IRQ_F2P"
         ]
       }
     },

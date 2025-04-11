@@ -1,0 +1,8 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"multiplexor_tb_func_synth.vhd" \
+"../../../../../multiplexor.srcs/sources_1/imports/src/Hogpack.vhd" \
+"../../../../../multiplexor.srcs/sim_1/new/test_binariza.vhd" \
+
+# Do not sort compile order
+nosort

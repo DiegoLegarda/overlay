@@ -1,0 +1,12 @@
+Vivado Simulator v2022.2
+Copyright 1986-1999, 2001-2022 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2022.2/bin/unwrapped/win64.o/xelab.exe --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot multiplexor_tb_func_synth xil_defaultlib.multiplexor_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+ERROR: [VRFC 10-3146] binding entity 'multiplexor' does not have generic 'num_features' [D:/ProgramasDoctorado/PrimerIP/overlay/multiplexor/multiplexor.srcs/sim_1/new/test_binariza.vhd:48]
+ERROR: [VRFC 10-3146] binding entity 'multiplexor' does not have generic 'num_bins' [D:/ProgramasDoctorado/PrimerIP/overlay/multiplexor/multiplexor.srcs/sim_1/new/test_binariza.vhd:49]
+ERROR: [VRFC 10-3146] binding entity 'multiplexor' does not have generic 'bin_width' [D:/ProgramasDoctorado/PrimerIP/overlay/multiplexor/multiplexor.srcs/sim_1/new/test_binariza.vhd:50]
+ERROR: [VRFC 10-3146] binding entity 'multiplexor' does not have generic 'block_size' [D:/ProgramasDoctorado/PrimerIP/overlay/multiplexor/multiplexor.srcs/sim_1/new/test_binariza.vhd:51]
+ERROR: [VRFC 10-3290] entity port 'average' does not match with type unsigned of component port [D:/ProgramasDoctorado/PrimerIP/overlay/multiplexor/multiplexor.srcs/sim_1/new/test_binariza.vhd:57]
+ERROR: [VRFC 10-718] formal port <block_histogram_in> does not exist in entity <multiplexor>.  Please compare the definition of block <multiplexor> to its component declaration and its instantion to detect the mismatch. [D:/ProgramasDoctorado/PrimerIP/overlay/multiplexor/multiplexor.srcs/sim_1/new/test_binariza.vhd:58]
+ERROR: [XSIM 43-3321] Static elaboration of top level VHDL design unit multiplexor_tb in library work failed.

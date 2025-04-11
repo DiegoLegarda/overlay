@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/ProgramasDoctorado/PrimerIP/overlay/multiplexor/multiplexor.sim/sim_1/synth/timing/xsim/multiplexor_tb_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexor
+INFO: [VRFC 10-311] analyzing module glbl

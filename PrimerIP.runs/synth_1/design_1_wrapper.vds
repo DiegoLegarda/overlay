@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Sun Apr  6 10:19:40 2025
-# Process ID: 20112
+# Start of session at: Wed Apr  9 09:39:31 2025
+# Process ID: 6208
 # Current directory: D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/design_1_wrapper.vds
@@ -11,7 +11,7 @@
 # Running On: W1125, OS: Windows, CPU Frequency: 1996 MHz, CPU Physical cores: 16, Host memory: 16539 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 418.797 ; gain = 82.168
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 426.047 ; gain = 86.070
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ProgramasDoctorado/PrimerIP/overlay/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
@@ -22,48 +22,150 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 13984
+INFO: [Synth 8-7075] Helper process launched with PID 460
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1271.926 ; gain = 406.926
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1280.789 ; gain = 407.941
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
 INFO: [Synth 8-3491] module 'design_1' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:573' bound to instance 'design_1_i' of component 'design_1' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:67]
 INFO: [Synth 8-638] synthesizing module 'design_1' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:603]
-INFO: [Synth 8-3491] module 'design_1_HOGv22_0_1' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-20112-W1125/realtime/design_1_HOGv22_0_1_stub.vhdl:5' bound to instance 'HOGv22_0' of component 'design_1_HOGv22_0_1' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:916]
-INFO: [Synth 8-638] synthesizing module 'design_1_HOGv22_0_1' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-20112-W1125/realtime/design_1_HOGv22_0_1_stub.vhdl:25]
-WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:687]
-INFO: [Synth 8-3491] module 'design_1_axi_dma_0_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-20112-W1125/realtime/design_1_axi_dma_0_0_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'design_1_axi_dma_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:933]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_dma_0_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-20112-W1125/realtime/design_1_axi_dma_0_0_stub.vhdl:75]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-20112-W1125/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:999]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-20112-W1125/realtime/design_1_processing_system7_0_0_stub.vhdl:76]
+INFO: [Synth 8-3491] module 'design_1_HOGv22_0_1' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-6208-W1125/realtime/design_1_HOGv22_0_1_stub.vhdl:5' bound to instance 'HOGv22_0' of component 'design_1_HOGv22_0_1' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:925]
+INFO: [Synth 8-638] synthesizing module 'design_1_HOGv22_0_1' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-6208-W1125/realtime/design_1_HOGv22_0_1_stub.vhdl:25]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:688]
+INFO: [Synth 8-3491] module 'design_1_axi_dma_0_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-6208-W1125/realtime/design_1_axi_dma_0_0_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'design_1_axi_dma_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:942]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_dma_0_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-6208-W1125/realtime/design_1_axi_dma_0_0_stub.vhdl:75]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-6208-W1125/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1008]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-6208-W1125/realtime/design_1_processing_system7_0_0_stub.vhdl:77]
 INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:389]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:77]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-20112-W1125/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:257]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-20112-W1125/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-6208-W1125/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:257]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-6208-W1125/realtime/design_1_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:77]
 INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:389]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-20112-W1125/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1130]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-20112-W1125/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-6208-W1125/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1140]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-6208-W1125/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1153]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:603]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
-WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_UYSKKA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_UYSKKA is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In4[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In5[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In6[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In7[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In8[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In9[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In10[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In11[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In12[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In13[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In14[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In15[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In16[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In17[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In18[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In19[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In20[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In21[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In22[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In23[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In24[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In25[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In26[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In27[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In28[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In29[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In30[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In31[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In32[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In33[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In34[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In35[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In36[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In37[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In38[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In39[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In40[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In41[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In42[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In43[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In44[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In45[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In46[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In47[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In48[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In49[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In50[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In51[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In52[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In53[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In54[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In55[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In56[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In57[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In58[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In59[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In60[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In61[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In62[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In63[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In64[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In65[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In66[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In67[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In68[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In69[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In70[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In71[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In72[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In73[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In74[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In75[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In76[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In77[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In78[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In79[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In80[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In81[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In82[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In83[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In84[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In85[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In86[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In87[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In88[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In89[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In90[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In91[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In92[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In93[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In94[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In95[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In96[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In97[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In98[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In99[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1370.371 ; gain = 505.371
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1380.188 ; gain = 507.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1370.371 ; gain = 505.371
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1380.188 ; gain = 507.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1370.371 ; gain = 505.371
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1380.188 ; gain = 507.340
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1370.371 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1380.188 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -82,21 +184,21 @@ Parsing XDC File [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/d
 Finished Parsing XDC File [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1383.602 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1380.188 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1383.602 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1380.188 ; gain = 0.000
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1383.602 ; gain = 518.602
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1380.188 ; gain = 507.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1383.602 ; gain = 518.602
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1380.188 ; gain = 507.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -368,11 +470,12 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_dma_0. (constraint
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/HOGv22_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconcat_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1383.602 ; gain = 518.602
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1380.188 ; gain = 507.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1383.602 ; gain = 518.602
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1380.188 ; gain = 507.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -394,30 +497,26 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
-WARNING: [Synth 8-7129] Port ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
-WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1383.602 ; gain = 518.602
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:18 . Memory (MB): peak = 1380.188 ; gain = 507.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1383.602 ; gain = 518.602
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1380.188 ; gain = 507.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1383.602 ; gain = 518.602
+Finished Timing Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1380.188 ; gain = 507.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1383.602 ; gain = 518.602
+Finished Technology Mapping : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1380.188 ; gain = 507.340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -435,37 +534,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1385.883 ; gain = 520.883
+Finished IO Insertion : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1381.281 ; gain = 508.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1385.883 ; gain = 520.883
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1381.281 ; gain = 508.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1385.883 ; gain = 520.883
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1381.281 ; gain = 508.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1385.883 ; gain = 520.883
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1381.281 ; gain = 508.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1385.883 ; gain = 520.883
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1381.281 ; gain = 508.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1385.883 ; gain = 520.883
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1381.281 ; gain = 508.434
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -493,24 +592,24 @@ Report Cell Usage:
 |5     |design_1_rst_ps7_0_100M_0_bbox       |     1|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1385.883 ; gain = 520.883
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1381.281 ; gain = 508.434
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1385.883 ; gain = 507.652
-Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1385.883 ; gain = 520.883
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 1381.281 ; gain = 508.434
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1381.281 ; gain = 508.434
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1385.883 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1381.281 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1406.246 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1406.367 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 40c1af9
+Synth Design complete, checksum: 7f3b2e86
 INFO: [Common 17-83] Releasing license: Synthesis
-36 Infos, 10 Warnings, 0 Critical Warnings and 0 Errors encountered.
+42 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1412.238 ; gain = 957.938
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1412.348 ; gain = 950.957
 INFO: [Common 17-1381] The checkpoint 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Sun Apr  6 10:20:23 2025...
+INFO: [Common 17-206] Exiting Vivado at Wed Apr  9 09:40:14 2025...

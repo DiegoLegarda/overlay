@@ -1,0 +1,51 @@
++====================+===================+================================================================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                                                            |
++====================+===================+================================================================================+
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[0]/D  |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[1]/D  |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[3]/D  |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[4]/D  |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[5]/D  |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[7]/D  |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[8]/D  |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[9]/D  |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[11]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[12]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[13]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[15]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[16]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[17]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[18]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[19]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[20]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[21]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/s_hist_bloque_reg[1][1][19]/D                       |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/s_hist_bloque_reg[3][2][18]/D                       |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/s_hist_bloque_reg[1][1][11]/D                       |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/s_hist_bloque_reg[0][1][12]/D                       |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[23]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/blocos.sceldas_Y_reg[0]/D                           |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/blocos.sceldas_Y_reg[1]/D                           |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[24]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[25]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[20]/D          |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[19]/D          |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[17]/D          |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[16]/D          |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[15]/D          |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[18]/D          |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[13]/D          |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[14]/D          |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[12]/D          |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[11]/D          |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[10]/D          |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[9]/D           |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[8]/D           |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[26]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[7]/D           |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[6]/D           |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[5]/D           |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[4]/D           |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_cell_histogram_inst/Calculo_bin.ratio_reg[27]/D |
+| clk_fpga_0         | clk_fpga_0        | design_1_i/HOGv22_0/U0/uut/hog_block_histogram_inst/bin_sum_reg[3]/D           |
++--------------------+-------------------+--------------------------------------------------------------------------------+
