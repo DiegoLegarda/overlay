@@ -46,17 +46,6 @@ vcom -work proc_sys_reset_v5_0_13  -93  \
 vcom -work xil_defaultlib  -93  \
 "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
 "../../../bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_sim_netlist.vhdl" \
-"../../../bd/design_1/ipshared/6c45/src/FIFO_control.vhd" \
-"../../../bd/design_1/ipshared/6c45/src/Hogpack.vhd" \
-"../../../bd/design_1/ipshared/6c45/src/HOG_Block_HIstogram.vhd" \
-"../../../bd/design_1/ipshared/6c45/src/Top_module.vhd" \
-"../../../bd/design_1/ipshared/6c45/src/block_formation.vhd" \
-"../../../bd/design_1/ipshared/6c45/src/edge_detection.vhd" \
-"../../../bd/design_1/ipshared/6c45/src/horizontal_gradient.vhd" \
-"../../../bd/design_1/ipshared/6c45/src/multiplexor.vhd" \
-"../../../bd/design_1/ipshared/6c45/src/vertical_gradient.vhd" \
-"../../../bd/design_1/ipshared/6c45/hdl/HOGv2_0_v1_0.vhd" \
-"../../../bd/design_1/ip/design_1_HOGv22_0_1/sim/design_1_HOGv22_0_1.vhd" \
 
 vlog -work xlconcat_v2_1_4  -incr -mfcu  "+incdir+../../../../PrimerIP.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../PrimerIP.gen/sources_1/bd/design_1/ipshared/ee60/hdl" "+incdir+C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../../PrimerIP.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v" \
@@ -65,6 +54,18 @@ vlog -work xil_defaultlib  -incr -mfcu  "+incdir+../../../../PrimerIP.gen/source
 "../../../bd/design_1/ip/design_1_xlconcat_0_0/sim/design_1_xlconcat_0_0.v" \
 
 vcom -work xil_defaultlib  -93  \
+"../../../bd/design_1/ipshared/63c7/src/FIFO_control.vhd" \
+"../../../bd/design_1/ipshared/63c7/src/Hogpack.vhd" \
+"../../../bd/design_1/ipshared/63c7/src/HOG_Block_HIstogram.vhd" \
+"../../../bd/design_1/ipshared/63c7/src/Top_module.vhd" \
+"../../../bd/design_1/ipshared/63c7/src/angulo.vhd" \
+"../../../bd/design_1/ipshared/63c7/src/block_formation.vhd" \
+"../../../bd/design_1/ipshared/63c7/src/edge_detection.vhd" \
+"../../../bd/design_1/ipshared/63c7/src/horizontal_gradient.vhd" \
+"../../../bd/design_1/ipshared/63c7/src/multiplexor.vhd" \
+"../../../bd/design_1/ipshared/63c7/src/vertical_gradient.vhd" \
+"../../../bd/design_1/ipshared/63c7/hdl/HOGv2_0_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_HOGv22_0_1/sim/design_1_HOGv22_0_1.vhd" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_sim_netlist.vhdl" \
 "../../../bd/design_1/sim/design_1.vhd" \
 
