@@ -2,8 +2,8 @@
 # Vivado v2022.2 (64-bit)
 # SW Build 3671981 on Fri Oct 14 05:00:03 MDT 2022
 # IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
-# Start of session at: Thu Apr 17 08:25:04 2025
-# Process ID: 21060
+# Start of session at: Fri Apr 25 22:23:29 2025
+# Process ID: 2640
 # Current directory: D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/design_1_wrapper.vds
@@ -11,6 +11,7 @@
 # Running On: W1125, OS: Windows, CPU Frequency: 1996 MHz, CPU Physical cores: 16, Host memory: 16539 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 424.879 ; gain = 85.203
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/ProgramasDoctorado/PrimerIP/overlay/ip_repo'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2022.2/data/ip'.
@@ -21,35 +22,51 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 13344
+INFO: [Synth 8-7075] Helper process launched with PID 6792
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1278.934 ; gain = 407.586
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1290.445 ; gain = 407.754
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
-INFO: [Synth 8-3491] module 'design_1' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:573' bound to instance 'design_1_i' of component 'design_1' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:67]
-INFO: [Synth 8-638] synthesizing module 'design_1' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:603]
-INFO: [Synth 8-3491] module 'design_1_HOGv22_0_1' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-21060-W1125/realtime/design_1_HOGv22_0_1_stub.vhdl:5' bound to instance 'HOGv22_0' of component 'design_1_HOGv22_0_1' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:925]
-INFO: [Synth 8-638] synthesizing module 'design_1_HOGv22_0_1' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-21060-W1125/realtime/design_1_HOGv22_0_1_stub.vhdl:25]
-WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:688]
-INFO: [Synth 8-3491] module 'design_1_axi_dma_0_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-21060-W1125/realtime/design_1_axi_dma_0_0_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'design_1_axi_dma_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:942]
-INFO: [Synth 8-638] synthesizing module 'design_1_axi_dma_0_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-21060-W1125/realtime/design_1_axi_dma_0_0_stub.vhdl:75]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-21060-W1125/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1008]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-21060-W1125/realtime/design_1_processing_system7_0_0_stub.vhdl:77]
-INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:389]
-INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:77]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-21060-W1125/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:257]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-21060-W1125/realtime/design_1_auto_pc_0_stub.vhdl:70]
-INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:77]
-INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:389]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-21060-W1125/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1140]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-21060-W1125/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1153]
+INFO: [Synth 8-3491] module 'design_1' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:2043' bound to instance 'design_1_i' of component 'design_1' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:67]
+INFO: [Synth 8-638] synthesizing module 'design_1' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:2073]
+INFO: [Synth 8-3491] module 'design_1_HOGv22_0_1' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_HOGv22_0_1_stub.vhdl:5' bound to instance 'HOGv22_0' of component 'design_1_HOGv22_0_1' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:2489]
+INFO: [Synth 8-638] synthesizing module 'design_1_HOGv22_0_1' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_HOGv22_0_1_stub.vhdl:23]
+WARNING: [Synth 8-5640] Port 'axi_dma_tstvec' is missing in component declaration [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:2203]
+INFO: [Synth 8-3491] module 'design_1_axi_dma_0_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_axi_dma_0_0_stub.vhdl:5' bound to instance 'axi_dma_0' of component 'design_1_axi_dma_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:2504]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_dma_0_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_axi_dma_0_0_stub.vhdl:75]
+INFO: [Synth 8-638] synthesizing module 'design_1_axi_mem_intercon_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1210]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_1R706YB' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:100]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_1' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_auto_pc_1_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_1' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:343]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_1' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_auto_pc_1_stub.vhdl:90]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_1R706YB' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:100]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_7HNO1D' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:467]
+INFO: [Synth 8-3491] module 'design_1_auto_us_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_auto_us_0_stub.vhdl:5' bound to instance 'auto_us' of component 'design_1_auto_us_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:568]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_us_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_auto_us_0_stub.vhdl:45]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_7HNO1D' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:467]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_1W60HW0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:963]
+INFO: [Synth 8-3491] module 'design_1_auto_us_1' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_auto_us_1_stub.vhdl:5' bound to instance 'auto_us' of component 'design_1_auto_us_1' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1082]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_us_1' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_auto_us_1_stub.vhdl:51]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_1W60HW0' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:963]
+INFO: [Synth 8-3491] module 'design_1_xbar_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_xbar_0_stub.vhdl:5' bound to instance 'xbar' of component 'design_1_xbar_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1675]
+INFO: [Synth 8-638] synthesizing module 'design_1_xbar_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_xbar_0_stub.vhdl:89]
+INFO: [Synth 8-256] done synthesizing module 'design_1_axi_mem_intercon_0' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1210]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:2648]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_processing_system7_0_0_stub.vhdl:122]
+INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1859]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:673]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:853]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:673]
+INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:1859]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:2828]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/.Xil/Vivado-2640-W1125/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_xlconcat_0_0' declared at 'd:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53' bound to instance 'xlconcat_0' of component 'design_1_xlconcat_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:2841]
 INFO: [Synth 8-6157] synthesizing module 'design_1_xlconcat_0_0' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
 INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_4_xlconcat' [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_4_xlconcat' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v:14]
 INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconcat_0_0' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_xlconcat_0_0/synth/design_1_xlconcat_0_0.v:53]
-INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:603]
+INFO: [Synth 8-256] done synthesizing module 'design_1' (0#1) [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/synth/design_1.vhd:2073]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (0#1) [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
 WARNING: [Synth 8-7129] Port In2[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 WARNING: [Synth 8-7129] Port In3[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
@@ -153,18 +170,18 @@ WARNING: [Synth 8-7129] Port In100[0] in module xlconcat_v2_1_4_xlconcat is eith
 WARNING: [Synth 8-7129] Port In101[0] in module xlconcat_v2_1_4_xlconcat is either unconnected or has no load
 INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1395.410 ; gain = 512.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1395.410 ; gain = 512.719
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1395.410 ; gain = 512.719
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1379.242 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1395.410 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -177,6 +194,14 @@ Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/
 Finished Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0/design_1_axi_dma_0_0_in_context.xdc] for cell 'design_1_i/axi_dma_0'
 Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
 Finished Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_0_in_context.xdc] for cell 'design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
+Finished Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/xbar'
+Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
+Finished Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0/design_1_auto_us_0_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s00_couplers/auto_us'
+Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us'
+Finished Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1/design_1_auto_us_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/s01_couplers/auto_us'
+Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
+Finished Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/axi_mem_intercon/m00_couplers/auto_pc'
 Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_HOGv22_0_1/design_1_HOGv22_0_1/design_1_HOGv22_0_1_in_context.xdc] for cell 'design_1_i/HOGv22_0'
 Finished Parsing XDC File [d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_HOGv22_0_1/design_1_HOGv22_0_1/design_1_HOGv22_0_1_in_context.xdc] for cell 'design_1_i/HOGv22_0'
 Parsing XDC File [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.srcs/constrs_1/new/constraintProyecto.xdc]
@@ -185,21 +210,21 @@ Parsing XDC File [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/d
 Finished Parsing XDC File [D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1379.242 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1412.184 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1379.242 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1412.184 ; gain = 0.000
 INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [C:/Xilinx/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -471,12 +496,17 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_dma_0. (constraint
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph/s00_couplers/auto_pc. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/ps7_0_axi_periph. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/xlconcat_0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/xbar. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s00_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/s01_couplers/auto_us. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon/m00_couplers/auto_pc. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/axi_mem_intercon. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/HOGv22_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -499,25 +529,25 @@ Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -535,37 +565,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished IO Insertion : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:22 ; elapsed = 00:00:22 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -575,11 +605,15 @@ Report BlackBoxes:
 +------+--------------------------------+----------+
 |      |BlackBox name                   |Instances |
 +------+--------------------------------+----------+
-|1     |design_1_auto_pc_0              |         1|
-|2     |design_1_HOGv22_0_1             |         1|
-|3     |design_1_axi_dma_0_0            |         1|
-|4     |design_1_processing_system7_0_0 |         1|
-|5     |design_1_rst_ps7_0_100M_0       |         1|
+|1     |design_1_xbar_0                 |         1|
+|2     |design_1_auto_pc_1              |         1|
+|3     |design_1_auto_us_0              |         1|
+|4     |design_1_auto_us_1              |         1|
+|5     |design_1_auto_pc_0              |         1|
+|6     |design_1_HOGv22_0_1             |         1|
+|7     |design_1_axi_dma_0_0            |         1|
+|8     |design_1_processing_system7_0_0 |         1|
+|9     |design_1_rst_ps7_0_100M_0       |         1|
 +------+--------------------------------+----------+
 
 Report Cell Usage: 
@@ -588,29 +622,33 @@ Report Cell Usage:
 +------+-------------------------------------+------+
 |1     |design_1_HOGv22_0_1_bbox             |     1|
 |2     |design_1_auto_pc_0_bbox              |     1|
-|3     |design_1_axi_dma_0_0_bbox            |     1|
-|4     |design_1_processing_system7_0_0_bbox |     1|
-|5     |design_1_rst_ps7_0_100M_0_bbox       |     1|
+|3     |design_1_auto_pc_1_bbox              |     1|
+|4     |design_1_auto_us_0_bbox              |     1|
+|5     |design_1_auto_us_1_bbox              |     1|
+|6     |design_1_axi_dma_0_0_bbox            |     1|
+|7     |design_1_processing_system7_0_0_bbox |     1|
+|8     |design_1_rst_ps7_0_100M_0_bbox       |     1|
+|9     |design_1_xbar_0_bbox                 |     1|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1412.184 ; gain = 529.492
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 1379.242 ; gain = 507.895
-Synthesis Optimization Complete : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1379.242 ; gain = 507.895
+Synthesis finished with 0 errors, 0 critical warnings and 21 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 1412.184 ; gain = 512.719
+Synthesis Optimization Complete : Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 1412.184 ; gain = 529.492
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1379.242 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1412.184 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1402.590 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1424.930 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 7f3b2e86
+Synth Design complete, checksum: c8f2ba1
 INFO: [Common 17-83] Releasing license: Synthesis
-42 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
+58 Infos, 102 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:27 . Memory (MB): peak = 1407.562 ; gain = 946.930
+synth_design: Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1429.938 ; gain = 969.070
 INFO: [Common 17-1381] The checkpoint 'D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Apr 17 08:25:39 2025...
+INFO: [Common 17-206] Exiting Vivado at Fri Apr 25 22:24:16 2025...
