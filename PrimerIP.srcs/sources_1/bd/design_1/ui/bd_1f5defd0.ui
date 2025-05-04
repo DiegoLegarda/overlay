@@ -1,42 +1,60 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.558762",
-   "Default View_TopLeft":"5,-97",
+   "Default View_ScaleFactor":"0.683798",
+   "Default View_TopLeft":"0,0",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 6 -x 1820 -y 200 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 6 -x 1820 -y 230 -defaultsOSRD
-preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1570 -y 260 -defaultsOSRD
-preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 190 -y 440 -defaultsOSRD
-preplace inst axi_dma_0 -pg 1 -lvl 3 -x 850 -y 250 -defaultsOSRD
-preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 520 -y 420 -defaultsOSRD
-preplace inst xlconcat_0 -pg 1 -lvl 4 -x 1200 -y 70 -defaultsOSRD
-preplace inst axi_mem_intercon -pg 1 -lvl 4 -x 1200 -y 270 -defaultsOSRD
-preplace inst HOGv22_0 -pg 1 -lvl 2 -x 520 -y 200 -defaultsOSRD
-preplace netloc axi_dma_0_m_axis_mm2s_tvalid 1 1 3 380 100 NJ 100 1010
-preplace netloc axi_dma_0_mm2s_introut 1 3 1 1030 60n
-preplace netloc axi_dma_0_s2mm_introut 1 3 1 1050 80n
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 340 360 110 670 120 1040 420 1360 370 1790
-preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 540 NJ 540 NJ 540 NJ 540 NJ 540 1780
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 3 370 300 660 380 1060
-preplace netloc xlconcat_0_dout 1 4 1 1350 70n
-preplace netloc HOGv22_0_M00_AXIS 1 2 1 660 200n
-preplace netloc axi_dma_0_M_AXIS_MM2S 1 1 3 370 90 NJ 90 1020
-preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 N 180
-preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 N 200
-preplace netloc axi_mem_intercon_M00_AXI 1 4 1 1340 240n
-preplace netloc processing_system7_0_DDR 1 5 1 1800J 200n
-preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ 230
-preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 380 550 NJ 550 NJ 550 NJ 550 1800
-preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 680 200n
-levelinfo -pg 1 0 190 520 850 1200 1570 1820
-pagesize -pg 1 -db -bbox -sgen 0 0 1930 560
+preplace port DDR -pg 1 -lvl 6 -x 2190 -y 590 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 6 -x 2190 -y 620 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 5 -x 1940 -y 650 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 190 -y 590 -defaultsOSRD
+preplace inst axi_dma_0 -pg 1 -lvl 3 -x 1150 -y 650 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 590 -y 570 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 4 -x 1580 -y 890 -defaultsOSRD
+preplace inst axi_mem_intercon -pg 1 -lvl 4 -x 1580 -y 630 -defaultsOSRD
+preplace inst ila_0 -pg 1 -lvl 3 -x 1150 -y 230 -defaultsOSRD
+preplace inst HOGv22_0 -pg 1 -lvl 2 -x 590 -y 240 -defaultsOSRD
+preplace netloc axi_dma_0_m_axis_mm2s_tdata 1 1 3 400 40 950 460 1360
+preplace netloc axi_dma_0_mm2s_introut 1 3 1 1430 740n
+preplace netloc axi_dma_0_s2mm_introut 1 3 1 1380 760n
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 6 20 490 360 50 900 480 1440 480 1720 540 2150
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 6 20 830 NJ 830 NJ 830 1440J 820 NJ 820 2150
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 3 370 690 800 820 1420
+preplace netloc xlconcat_0_dout 1 4 1 1720 690n
+preplace netloc m_axis_mm2s_tvalid 1 1 3 390 430 940 430 1410
+preplace netloc HOGv22_0_out_contador 1 2 1 840 170n
+preplace netloc HOGv22_0_out_average 1 2 1 N 250
+preplace netloc HOGv22_0_out_bloque 1 2 1 880 230n
+preplace netloc HOGv22_0_out_start_bin 1 2 1 820 110n
+preplace netloc HOGv22_0_out_final_process 1 2 1 850 130n
+preplace netloc HOGv22_0_out_ready_histo 1 2 1 890 190n
+preplace netloc HOGv22_0_out_soma 1 2 1 910 310n
+preplace netloc HOGv22_0_out_cely 1 2 1 920 330n
+preplace netloc m00_axis_tdata 1 2 1 800 130n
+preplace netloc m00_axis_tvalid 1 2 1 870 190n
+preplace netloc m00_axis_tlast 1 2 1 830 170n
+preplace netloc s00_axis_tready 1 1 3 400 440 930 440 1370
+preplace netloc axi_dma_0_s_axis_s2mm_tready 1 2 1 860 210n
+preplace netloc axi_dma_0_m_axis_mm2s_tkeep 1 1 3 370 20 NJ 20 1400
+preplace netloc axi_dma_0_m_axis_mm2s_tlast 1 1 3 380 30 NJ 30 1390
+preplace netloc HOGv22_0_m00_axis_tstrb 1 2 1 780 150n
+preplace netloc axi_dma_0_M_AXI_MM2S 1 3 1 N 540
+preplace netloc axi_dma_0_M_AXI_S2MM 1 3 1 N 560
+preplace netloc axi_mem_intercon_M00_AXI 1 4 1 N 630
+preplace netloc processing_system7_0_DDR 1 5 1 2170J 590n
+preplace netloc processing_system7_0_FIXED_IO 1 5 1 NJ 620
+preplace netloc processing_system7_0_M_AXI_GP0 1 1 5 400 450 NJ 450 NJ 450 NJ 450 2160
+preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 790 550n
+preplace netloc axi_dma_0_M_AXIS_MM2S 1 1 3 390 10 NJ 10 1380
+preplace netloc HOGv22_0_M00_AXIS 1 2 1 810 110n
+levelinfo -pg 1 0 190 590 1150 1580 1940 2190
+pagesize -pg 1 -db -bbox -sgen 0 0 2300 960
 "
 }
 {
    "da_axi4_cnt":"3",
    "da_board_cnt":"1",
-   "da_clkrst_cnt":"12",
+   "da_clkrst_cnt":"28",
    "da_ps7_cnt":"1"
 }
