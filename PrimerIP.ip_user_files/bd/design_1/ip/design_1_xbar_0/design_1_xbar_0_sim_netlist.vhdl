@@ -1,10 +1,10 @@
 -- Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
--- Date        : Tue Apr 22 22:19:45 2025
+-- Date        : Sun May  4 23:15:44 2025
 -- Host        : W1125 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim -rename_top design_1_xbar_0 -prefix
---               design_1_xbar_0_ design_1_xbar_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim
+--               d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_sim_netlist.vhdl
 -- Design      : design_1_xbar_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -45,6 +45,8 @@ entity design_1_xbar_0_axi_crossbar_v2_1_28_addr_arbiter is
     \gen_single_thread.active_target_hot\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_single_thread.active_target_enc\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_xbar_0_axi_crossbar_v2_1_28_addr_arbiter : entity is "axi_crossbar_v2_1_28_addr_arbiter";
 end design_1_xbar_0_axi_crossbar_v2_1_28_addr_arbiter;
 
 architecture STRUCTURE of design_1_xbar_0_axi_crossbar_v2_1_28_addr_arbiter is
@@ -2497,6 +2499,8 @@ entity design_1_xbar_0_axi_crossbar_v2_1_28_decerr_slave is
     \gen_axi.s_axi_bid_i_reg[0]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     \gen_axi.s_axi_rlast_i_reg_0\ : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_xbar_0_axi_crossbar_v2_1_28_decerr_slave : entity is "axi_crossbar_v2_1_28_decerr_slave";
 end design_1_xbar_0_axi_crossbar_v2_1_28_decerr_slave;
 
 architecture STRUCTURE of design_1_xbar_0_axi_crossbar_v2_1_28_decerr_slave is
@@ -3078,6 +3082,8 @@ entity design_1_xbar_0_axi_crossbar_v2_1_28_si_transactor is
     \gen_single_thread.accept_cnt_reg[3]_0\ : in STD_LOGIC;
     s_axi_rready : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_xbar_0_axi_crossbar_v2_1_28_si_transactor : entity is "axi_crossbar_v2_1_28_si_transactor";
 end design_1_xbar_0_axi_crossbar_v2_1_28_si_transactor;
 
 architecture STRUCTURE of design_1_xbar_0_axi_crossbar_v2_1_28_si_transactor is
@@ -3908,6 +3914,8 @@ entity design_1_xbar_0_axi_crossbar_v2_1_28_splitter is
     aresetn_d : in STD_LOGIC;
     aclk : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_xbar_0_axi_crossbar_v2_1_28_splitter : entity is "axi_crossbar_v2_1_28_splitter";
 end design_1_xbar_0_axi_crossbar_v2_1_28_splitter;
 
 architecture STRUCTURE of design_1_xbar_0_axi_crossbar_v2_1_28_splitter is
@@ -7236,6 +7244,8 @@ entity design_1_xbar_0_axi_data_fifo_v2_1_26_axic_reg_srl_fifo is
     m_select_enc_3 : in STD_LOGIC;
     m_avalid_4 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_xbar_0_axi_data_fifo_v2_1_26_axic_reg_srl_fifo : entity is "axi_data_fifo_v2_1_26_axic_reg_srl_fifo";
 end design_1_xbar_0_axi_data_fifo_v2_1_26_axic_reg_srl_fifo;
 
 architecture STRUCTURE of design_1_xbar_0_axi_data_fifo_v2_1_26_axic_reg_srl_fifo is
@@ -8951,6 +8961,8 @@ entity design_1_xbar_0_axi_register_slice_v2_1_27_axi_register_slice is
     m_axi_bresp : in STD_LOGIC_VECTOR ( 1 downto 0 );
     E : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_xbar_0_axi_register_slice_v2_1_27_axi_register_slice : entity is "axi_register_slice_v2_1_27_axi_register_slice";
 end design_1_xbar_0_axi_register_slice_v2_1_27_axi_register_slice;
 
 architecture STRUCTURE of design_1_xbar_0_axi_register_slice_v2_1_27_axi_register_slice is
@@ -9120,6 +9132,8 @@ entity design_1_xbar_0_axi_crossbar_v2_1_28_wdata_mux is
     D : in STD_LOGIC_VECTOR ( 1 downto 0 );
     SR : in STD_LOGIC_VECTOR ( 0 to 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_xbar_0_axi_crossbar_v2_1_28_wdata_mux : entity is "axi_crossbar_v2_1_28_wdata_mux";
 end design_1_xbar_0_axi_crossbar_v2_1_28_wdata_mux;
 
 architecture STRUCTURE of design_1_xbar_0_axi_crossbar_v2_1_28_wdata_mux is
@@ -9248,6 +9262,8 @@ entity design_1_xbar_0_axi_crossbar_v2_1_28_wdata_router is
     m_select_enc_3 : in STD_LOGIC;
     m_avalid_4 : in STD_LOGIC
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_xbar_0_axi_crossbar_v2_1_28_wdata_router : entity is "axi_crossbar_v2_1_28_wdata_router";
 end design_1_xbar_0_axi_crossbar_v2_1_28_wdata_router;
 
 architecture STRUCTURE of design_1_xbar_0_axi_crossbar_v2_1_28_wdata_router is
@@ -9336,6 +9352,8 @@ entity design_1_xbar_0_axi_crossbar_v2_1_28_crossbar is
     s_axi_wstrb : in STD_LOGIC_VECTOR ( 7 downto 0 );
     s_axi_wdata : in STD_LOGIC_VECTOR ( 63 downto 0 )
   );
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_xbar_0_axi_crossbar_v2_1_28_crossbar : entity is "axi_crossbar_v2_1_28_crossbar";
 end design_1_xbar_0_axi_crossbar_v2_1_28_crossbar;
 
 architecture STRUCTURE of design_1_xbar_0_axi_crossbar_v2_1_28_crossbar is
@@ -10119,9 +10137,11 @@ entity design_1_xbar_0_axi_crossbar_v2_1_28_axi_crossbar is
   attribute C_S_AXI_THREAD_ID_WIDTH : string;
   attribute C_S_AXI_THREAD_ID_WIDTH of design_1_xbar_0_axi_crossbar_v2_1_28_axi_crossbar : entity is "64'b0000000000000000000000000000000000000000000000000000000000000000";
   attribute C_S_AXI_WRITE_ACCEPTANCE : string;
-  attribute C_S_AXI_WRITE_ACCEPTANCE of design_1_xbar_0_axi_crossbar_v2_1_28_axi_crossbar : entity is "64'b0000000000000000000000000000100000000000000000000000000000001000";
+  attribute C_S_AXI_WRITE_ACCEPTANCE of design_1_xbar_0_axi_crossbar_v2_1_28_axi_crossbar : entity is "64'b0000000000000000000000000000100000000000000000000000000000000010";
   attribute DowngradeIPIdentifiedWarnings : string;
   attribute DowngradeIPIdentifiedWarnings of design_1_xbar_0_axi_crossbar_v2_1_28_axi_crossbar : entity is "yes";
+  attribute ORIG_REF_NAME : string;
+  attribute ORIG_REF_NAME of design_1_xbar_0_axi_crossbar_v2_1_28_axi_crossbar : entity is "axi_crossbar_v2_1_28_axi_crossbar";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of design_1_xbar_0_axi_crossbar_v2_1_28_axi_crossbar : entity is 1;
   attribute P_AXI3 : integer;
@@ -10539,7 +10559,7 @@ architecture STRUCTURE of design_1_xbar_0 is
   attribute C_S_AXI_THREAD_ID_WIDTH : string;
   attribute C_S_AXI_THREAD_ID_WIDTH of inst : label is "64'b0000000000000000000000000000000000000000000000000000000000000000";
   attribute C_S_AXI_WRITE_ACCEPTANCE : string;
-  attribute C_S_AXI_WRITE_ACCEPTANCE of inst : label is "64'b0000000000000000000000000000100000000000000000000000000000001000";
+  attribute C_S_AXI_WRITE_ACCEPTANCE of inst : label is "64'b0000000000000000000000000000100000000000000000000000000000000010";
   attribute DowngradeIPIdentifiedWarnings of inst : label is "yes";
   attribute P_ADDR_DECODE : integer;
   attribute P_ADDR_DECODE of inst : label is 1;
@@ -10653,7 +10673,7 @@ architecture STRUCTURE of design_1_xbar_0 is
   attribute X_INTERFACE_INFO of s_axi_rid : signal is "xilinx.com:interface:aximm:1.0 S00_AXI RID [0:0] [0:0], xilinx.com:interface:aximm:1.0 S01_AXI RID [0:0] [1:1]";
   attribute X_INTERFACE_INFO of s_axi_rlast : signal is "xilinx.com:interface:aximm:1.0 S00_AXI RLAST [0:0] [0:0], xilinx.com:interface:aximm:1.0 S01_AXI RLAST [0:0] [1:1]";
   attribute X_INTERFACE_INFO of s_axi_rready : signal is "xilinx.com:interface:aximm:1.0 S00_AXI RREADY [0:0] [0:0], xilinx.com:interface:aximm:1.0 S01_AXI RREADY [0:0] [1:1]";
-  attribute X_INTERFACE_PARAMETER of s_axi_rready : signal is "XIL_INTERFACENAME S00_AXI, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_ONLY, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0, XIL_INTERFACENAME S01_AXI, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE WRITE_ONLY, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
+  attribute X_INTERFACE_PARAMETER of s_axi_rready : signal is "XIL_INTERFACENAME S00_AXI, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE READ_ONLY, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 8, NUM_WRITE_OUTSTANDING 2, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0, XIL_INTERFACENAME S01_AXI, DATA_WIDTH 64, PROTOCOL AXI4, FREQ_HZ 100000000, ID_WIDTH 1, ADDR_WIDTH 32, AWUSER_WIDTH 0, ARUSER_WIDTH 0, WUSER_WIDTH 0, RUSER_WIDTH 0, BUSER_WIDTH 0, READ_WRITE_MODE WRITE_ONLY, HAS_BURST 1, HAS_LOCK 1, HAS_PROT 1, HAS_CACHE 1, HAS_QOS 1, HAS_REGION 0, HAS_WSTRB 1, HAS_BRESP 1, HAS_RRESP 1, SUPPORTS_NARROW_BURST 1, NUM_READ_OUTSTANDING 2, NUM_WRITE_OUTSTANDING 8, MAX_BURST_LENGTH 256, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, NUM_READ_THREADS 1, NUM_WRITE_THREADS 1, RUSER_BITS_PER_BYTE 0, WUSER_BITS_PER_BYTE 0, INSERT_VIP 0";
   attribute X_INTERFACE_INFO of s_axi_rresp : signal is "xilinx.com:interface:aximm:1.0 S00_AXI RRESP [1:0] [1:0], xilinx.com:interface:aximm:1.0 S01_AXI RRESP [1:0] [3:2]";
   attribute X_INTERFACE_INFO of s_axi_rvalid : signal is "xilinx.com:interface:aximm:1.0 S00_AXI RVALID [0:0] [0:0], xilinx.com:interface:aximm:1.0 S01_AXI RVALID [0:0] [1:1]";
   attribute X_INTERFACE_INFO of s_axi_wdata : signal is "xilinx.com:interface:aximm:1.0 S00_AXI WDATA [63:0] [63:0], xilinx.com:interface:aximm:1.0 S01_AXI WDATA [63:0] [127:64]";

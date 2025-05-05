@@ -45,7 +45,6 @@ vcom -work proc_sys_reset_v5_0_13 -93  \
 
 vcom -work xil_defaultlib -93  \
 "../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
-"../../../bd/design_1/ip/design_1_axi_dma_0_0/design_1_axi_dma_0_0_sim_netlist.vhdl" \
 
 vlog -work xlconcat_v2_1_4  -v2k5 "+incdir+../../../../PrimerIP.gen/sources_1/bd/design_1/ipshared/ec67/hdl" "+incdir+../../../../PrimerIP.gen/sources_1/bd/design_1/ipshared/ee60/hdl" "+incdir+../../../../PrimerIP.gen/sources_1/bd/design_1/ipshared/1b7e/hdl/verilog" "+incdir+../../../../PrimerIP.gen/sources_1/bd/design_1/ipshared/122e/hdl/verilog" "+incdir+../../../../PrimerIP.gen/sources_1/bd/design_1/ipshared/b205/hdl/verilog" "+incdir+../../../../PrimerIP.gen/sources_1/bd/design_1/ipshared/fd26/hdl/verilog" "+incdir+C:/Xilinx/Vivado/2022.2/data/xilinx_vip/include" \
 "../../../../PrimerIP.gen/sources_1/bd/design_1/ipshared/4b67/hdl/xlconcat_v2_1_vl_rfs.v" \
@@ -55,19 +54,20 @@ vlog -work xil_defaultlib  -v2k5 "+incdir+../../../../PrimerIP.gen/sources_1/bd/
 
 vcom -work xil_defaultlib -93  \
 "../../../bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_sim_netlist.vhdl" \
-"../../../bd/design_1/ip/design_1_ila_0_0/sim/design_1_ila_0_0.vhd" \
-"../../../bd/design_1/ipshared/bd40/src/FIFO_control.vhd" \
-"../../../bd/design_1/ipshared/bd40/src/Hogpack.vhd" \
-"../../../bd/design_1/ipshared/bd40/src/HOG_Block_HIstogram.vhd" \
-"../../../bd/design_1/ipshared/bd40/src/Top_module.vhd" \
-"../../../bd/design_1/ipshared/bd40/src/angulo.vhd" \
-"../../../bd/design_1/ipshared/bd40/src/block_formation.vhd" \
-"../../../bd/design_1/ipshared/bd40/src/edge_detection.vhd" \
-"../../../bd/design_1/ipshared/bd40/src/horizontal_gradient.vhd" \
-"../../../bd/design_1/ipshared/bd40/src/multiplexor.vhd" \
-"../../../bd/design_1/ipshared/bd40/src/vertical_gradient.vhd" \
-"../../../bd/design_1/ipshared/bd40/hdl/HOGv2_0_v1_0.vhd" \
-"../../../bd/design_1/ip/design_1_HOGv22_0_4/sim/design_1_HOGv22_0_4.vhd" \
+"../../../bd/design_1/ip/design_1_axi_dma_0_1/design_1_axi_dma_0_1_sim_netlist.vhdl" \
+"../../../bd/design_1/ip/design_1_ila_0_1/sim/design_1_ila_0_1.vhd" \
+"../../../bd/design_1/ipshared/eb2f/src/FIFO_control.vhd" \
+"../../../bd/design_1/ipshared/eb2f/src/Hogpack.vhd" \
+"../../../bd/design_1/ipshared/eb2f/src/HOG_Block_HIstogram.vhd" \
+"../../../bd/design_1/ipshared/eb2f/src/Top_module.vhd" \
+"../../../bd/design_1/ipshared/eb2f/src/angulo.vhd" \
+"../../../bd/design_1/ipshared/eb2f/src/block_formation.vhd" \
+"../../../bd/design_1/ipshared/eb2f/src/edge_detection.vhd" \
+"../../../bd/design_1/ipshared/eb2f/src/horizontal_gradient.vhd" \
+"../../../bd/design_1/ipshared/eb2f/src/multiplexor.vhd" \
+"../../../bd/design_1/ipshared/eb2f/src/vertical_gradient.vhd" \
+"../../../bd/design_1/ipshared/eb2f/hdl/HOGv2_0_v1_0.vhd" \
+"../../../bd/design_1/ip/design_1_HOGv22_0_6/sim/design_1_HOGv22_0_6.vhd" \
 "../../../bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_sim_netlist.vhdl" \
 "../../../bd/design_1/ip/design_1_auto_us_0/design_1_auto_us_0_sim_netlist.vhdl" \
 "../../../bd/design_1/ip/design_1_auto_us_1/design_1_auto_us_1_sim_netlist.vhdl" \
