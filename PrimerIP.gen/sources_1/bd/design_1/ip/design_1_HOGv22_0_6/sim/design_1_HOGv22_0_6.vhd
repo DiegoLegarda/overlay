@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:HOGv22:1.0
--- IP Revision: 66
+-- IP Revision: 97
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -64,6 +64,15 @@ ENTITY design_1_HOGv22_0_6 IS
     out_final_process : OUT STD_LOGIC;
     out_ready_histo : OUT STD_LOGIC;
     out_soma : OUT STD_LOGIC_VECTOR(24 DOWNTO 0);
+    out_celda : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    out_FSM : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    out_Histograma : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    out_top_left : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    out_top_right : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    out_bottom_left : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    out_bottom_right : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    out_cell_x_counter : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    out_cell_y_counter : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
     s00_axis_tready : OUT STD_LOGIC;
     s00_axis_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     s00_axis_tstrb : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -94,6 +103,15 @@ ARCHITECTURE design_1_HOGv22_0_6_arch OF design_1_HOGv22_0_6 IS
       out_final_process : OUT STD_LOGIC;
       out_ready_histo : OUT STD_LOGIC;
       out_soma : OUT STD_LOGIC_VECTOR(24 DOWNTO 0);
+      out_celda : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      out_FSM : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      out_Histograma : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+      out_top_left : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      out_top_right : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      out_bottom_left : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      out_bottom_right : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      out_cell_x_counter : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      out_cell_y_counter : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
       s00_axis_tready : OUT STD_LOGIC;
       s00_axis_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       s00_axis_tstrb : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -139,6 +157,15 @@ BEGIN
       out_final_process => out_final_process,
       out_ready_histo => out_ready_histo,
       out_soma => out_soma,
+      out_celda => out_celda,
+      out_FSM => out_FSM,
+      out_Histograma => out_Histograma,
+      out_top_left => out_top_left,
+      out_top_right => out_top_right,
+      out_bottom_left => out_bottom_left,
+      out_bottom_right => out_bottom_right,
+      out_cell_x_counter => out_cell_x_counter,
+      out_cell_y_counter => out_cell_y_counter,
       s00_axis_tready => s00_axis_tready,
       s00_axis_tdata => s00_axis_tdata,
       s00_axis_tstrb => s00_axis_tstrb,

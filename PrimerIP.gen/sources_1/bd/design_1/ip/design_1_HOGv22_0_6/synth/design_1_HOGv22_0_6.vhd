@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:user:HOGv22:1.0
--- IP Revision: 66
+-- IP Revision: 97
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
@@ -64,6 +64,15 @@ ENTITY design_1_HOGv22_0_6 IS
     out_final_process : OUT STD_LOGIC;
     out_ready_histo : OUT STD_LOGIC;
     out_soma : OUT STD_LOGIC_VECTOR(24 DOWNTO 0);
+    out_celda : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    out_FSM : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    out_Histograma : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+    out_top_left : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    out_top_right : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    out_bottom_left : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    out_bottom_right : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+    out_cell_x_counter : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+    out_cell_y_counter : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
     s00_axis_tready : OUT STD_LOGIC;
     s00_axis_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     s00_axis_tstrb : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -94,6 +103,15 @@ ARCHITECTURE design_1_HOGv22_0_6_arch OF design_1_HOGv22_0_6 IS
       out_final_process : OUT STD_LOGIC;
       out_ready_histo : OUT STD_LOGIC;
       out_soma : OUT STD_LOGIC_VECTOR(24 DOWNTO 0);
+      out_celda : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      out_FSM : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      out_Histograma : OUT STD_LOGIC_VECTOR(31 DOWNTO 0);
+      out_top_left : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      out_top_right : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      out_bottom_left : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      out_bottom_right : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
+      out_cell_x_counter : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
+      out_cell_y_counter : OUT STD_LOGIC_VECTOR(2 DOWNTO 0);
       s00_axis_tready : OUT STD_LOGIC;
       s00_axis_tdata : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
       s00_axis_tstrb : IN STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -111,7 +129,7 @@ ARCHITECTURE design_1_HOGv22_0_6_arch OF design_1_HOGv22_0_6 IS
   ATTRIBUTE CHECK_LICENSE_TYPE : STRING;
   ATTRIBUTE CHECK_LICENSE_TYPE OF design_1_HOGv22_0_6_arch : ARCHITECTURE IS "design_1_HOGv22_0_6,HOGv2_0_v1_0,{}";
   ATTRIBUTE CORE_GENERATION_INFO : STRING;
-  ATTRIBUTE CORE_GENERATION_INFO OF design_1_HOGv22_0_6_arch: ARCHITECTURE IS "design_1_HOGv22_0_6,HOGv2_0_v1_0,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=HOGv22,x_ipVersion=1.0,x_ipCoreRevision=66,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_AXIS_TDATA_WIDTH=32}";
+  ATTRIBUTE CORE_GENERATION_INFO OF design_1_HOGv22_0_6_arch: ARCHITECTURE IS "design_1_HOGv22_0_6,HOGv2_0_v1_0,{x_ipProduct=Vivado 2022.2,x_ipVendor=xilinx.com,x_ipLibrary=user,x_ipName=HOGv22,x_ipVersion=1.0,x_ipCoreRevision=97,x_ipLanguage=VHDL,x_ipSimLanguage=VHDL,C_AXIS_TDATA_WIDTH=32}";
   ATTRIBUTE X_INTERFACE_INFO : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF ACLK: SIGNAL IS "XIL_INTERFACENAME ACLK, ASSOCIATED_BUSIF S00_AXIS:M00_AXIS, ASSOCIATED_RESET ARESETN, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
@@ -145,6 +163,15 @@ BEGIN
       out_final_process => out_final_process,
       out_ready_histo => out_ready_histo,
       out_soma => out_soma,
+      out_celda => out_celda,
+      out_FSM => out_FSM,
+      out_Histograma => out_Histograma,
+      out_top_left => out_top_left,
+      out_top_right => out_top_right,
+      out_bottom_left => out_bottom_left,
+      out_bottom_right => out_bottom_right,
+      out_cell_x_counter => out_cell_x_counter,
+      out_cell_y_counter => out_cell_y_counter,
       s00_axis_tready => s00_axis_tready,
       s00_axis_tdata => s00_axis_tdata,
       s00_axis_tstrb => s00_axis_tstrb,

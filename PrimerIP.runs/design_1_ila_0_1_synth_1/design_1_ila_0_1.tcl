@@ -70,9 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "design_1_ila_0_1_synth_1" START { ROLLUP_AUTO }
-set_param tcl.collectionResultDisplayLimit 0
-set_param chipscope.maxJobs 4
-set_param xicom.use_bs_reader 1
 set_param project.vivado.isBlockSynthRun true
 set_msg_config -msgmgr_mode ooc_run
 OPTRACE "Creating in-memory project" START { }
@@ -94,7 +91,7 @@ set_property ip_output_repo d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.cach
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_ip -quiet d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/design_1_ila_0_1.xci
+read_ip -quiet D:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.srcs/sources_1/bd/design_1/ip/design_1_ila_0_1/design_1_ila_0_1.xci
 set_property used_in_synthesis false [get_files -all d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_ila_0_1/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_ila_0_1/ila_v6_2/constraints/ila_impl.xdc]
 set_property used_in_implementation false [get_files -all d:/ProgramasDoctorado/PrimerIP/overlay/PrimerIP.gen/sources_1/bd/design_1/ip/design_1_ila_0_1/ila_v6_2/constraints/ila.xdc]

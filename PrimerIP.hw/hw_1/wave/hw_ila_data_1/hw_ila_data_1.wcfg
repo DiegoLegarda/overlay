@@ -9,22 +9,22 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="16,339"></ZoomStartTime>
-      <ZoomEndTime time="16,393"></ZoomEndTime>
-      <Cursor1Time time="16,384"></Cursor1Time>
+      <ZoomStartTime time="0"></ZoomStartTime>
+      <ZoomEndTime time="16,385"></ZoomEndTime>
+      <Cursor1Time time="0"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="355"></NameColumnWidth>
-      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+      <NameColumnWidth column_width="615"></NameColumnWidth>
+      <ValueColumnWidth column_width="293"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="7" />
+   <WVObjectSize size="16" />
    <wave_markers>
    </wave_markers>
-   <wvobject fp_name="design_1_i/HOGv22_0_out_start_bin" type="logic">
+   <wvobject fp_name="design_1_i/HOGv22_0_out_Histograma" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_start_bin</obj_property>
-      <obj_property name="ObjectShortName">HOGv22_0_out_start_bin</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_Histograma[31:0]</obj_property>
+      <obj_property name="ObjectShortName">HOGv22_0_out_Histograma[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
@@ -32,7 +32,6 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_final_process</obj_property>
       <obj_property name="ObjectShortName">HOGv22_0_out_final_process</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
@@ -40,7 +39,30 @@
       <obj_property name="DisplayName">FullPathName</obj_property>
       <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_ready_histo</obj_property>
       <obj_property name="ObjectShortName">HOGv22_0_out_ready_histo</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HOGv22_0_out_average" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_average[15:0]</obj_property>
+      <obj_property name="ObjectShortName">HOGv22_0_out_average[15:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HOGv22_0_out_bloque" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_bloque[3:0]</obj_property>
+      <obj_property name="ObjectShortName">HOGv22_0_out_bloque[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HOGv22_0_out_celda" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_celda[3:0]</obj_property>
+      <obj_property name="ObjectShortName">HOGv22_0_out_celda[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
@@ -52,11 +74,11 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="design_1_i/HOGv22_0_out_bloque" type="array">
+   <wvobject fp_name="design_1_i/HOGv22_0_out_FSM" type="array">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_bloque[3:0]</obj_property>
-      <obj_property name="ObjectShortName">HOGv22_0_out_bloque[3:0]</obj_property>
-      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_FSM[3:0]</obj_property>
+      <obj_property name="ObjectShortName">HOGv22_0_out_FSM[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
@@ -68,10 +90,57 @@
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
    </wvobject>
-   <wvobject fp_name="design_1_i/HOGv22_0_out_average" type="array">
+   <wvobject fp_name="design_1_i/HOGv22_0_out_start_bin" type="logic">
       <obj_property name="DisplayName">FullPathName</obj_property>
-      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_average[15:0]</obj_property>
-      <obj_property name="ObjectShortName">HOGv22_0_out_average[15:0]</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_start_bin</obj_property>
+      <obj_property name="ObjectShortName">HOGv22_0_out_start_bin</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HOGv22_0_out_cell_x_counter" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_cell_x_counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">HOGv22_0_out_cell_x_counter[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HOGv22_0_out_cell_y_counter" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_cell_y_counter[2:0]</obj_property>
+      <obj_property name="ObjectShortName">HOGv22_0_out_cell_y_counter[2:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HOGv22_0_out_top_left" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_top_left[3:0]</obj_property>
+      <obj_property name="ObjectShortName">HOGv22_0_out_top_left[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HOGv22_0_out_top_right" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_top_right[3:0]</obj_property>
+      <obj_property name="ObjectShortName">HOGv22_0_out_top_right[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HOGv22_0_out_bottom_left" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_bottom_left[3:0]</obj_property>
+      <obj_property name="ObjectShortName">HOGv22_0_out_bottom_left[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/HOGv22_0_out_bottom_right" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/HOGv22_0_out_bottom_right[3:0]</obj_property>
+      <obj_property name="ObjectShortName">HOGv22_0_out_bottom_right[3:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
       <obj_property name="LABELRADIX">true</obj_property>
       <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>

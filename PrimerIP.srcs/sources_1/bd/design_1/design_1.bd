@@ -2760,19 +2760,85 @@
             "value": "Native"
           },
           "C_NUM_OF_PROBES": {
-            "value": "7"
+            "value": "16"
+          },
+          "C_PROBE10_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE10_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE11_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE11_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE12_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE12_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE13_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE13_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE14_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE14_WIDTH": {
+            "value": "3"
+          },
+          "C_PROBE15_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE15_WIDTH": {
+            "value": "3"
+          },
+          "C_PROBE3_TYPE": {
+            "value": "1"
           },
           "C_PROBE3_WIDTH": {
             "value": "15"
           },
+          "C_PROBE4_TYPE": {
+            "value": "1"
+          },
           "C_PROBE4_WIDTH": {
             "value": "16"
+          },
+          "C_PROBE5_TYPE": {
+            "value": "1"
           },
           "C_PROBE5_WIDTH": {
             "value": "4"
           },
+          "C_PROBE6_TYPE": {
+            "value": "1"
+          },
           "C_PROBE6_WIDTH": {
             "value": "25"
+          },
+          "C_PROBE7_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE7_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE8_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE8_WIDTH": {
+            "value": "4"
+          },
+          "C_PROBE9_TYPE": {
+            "value": "1"
+          },
+          "C_PROBE9_WIDTH": {
+            "value": "32"
           }
         }
       },
@@ -2840,6 +2906,18 @@
       }
     },
     "nets": {
+      "HOGv22_0_out_FSM": {
+        "ports": [
+          "HOGv22_0/out_FSM",
+          "ila_0/probe8"
+        ]
+      },
+      "HOGv22_0_out_Histograma": {
+        "ports": [
+          "HOGv22_0/out_Histograma",
+          "ila_0/probe9"
+        ]
+      },
       "HOGv22_0_out_average": {
         "ports": [
           "HOGv22_0/out_average",
@@ -2850,6 +2928,36 @@
         "ports": [
           "HOGv22_0/out_bloque",
           "ila_0/probe5"
+        ]
+      },
+      "HOGv22_0_out_bottom_left": {
+        "ports": [
+          "HOGv22_0/out_bottom_left",
+          "ila_0/probe12"
+        ]
+      },
+      "HOGv22_0_out_bottom_right": {
+        "ports": [
+          "HOGv22_0/out_bottom_right",
+          "ila_0/probe13"
+        ]
+      },
+      "HOGv22_0_out_celda": {
+        "ports": [
+          "HOGv22_0/out_celda",
+          "ila_0/probe7"
+        ]
+      },
+      "HOGv22_0_out_cell_x_counter": {
+        "ports": [
+          "HOGv22_0/out_cell_x_counter",
+          "ila_0/probe14"
+        ]
+      },
+      "HOGv22_0_out_cell_y_counter": {
+        "ports": [
+          "HOGv22_0/out_cell_y_counter",
+          "ila_0/probe15"
         ]
       },
       "HOGv22_0_out_contador": {
@@ -2880,6 +2988,18 @@
         "ports": [
           "HOGv22_0/out_start_bin",
           "ila_0/probe2"
+        ]
+      },
+      "HOGv22_0_out_top_left": {
+        "ports": [
+          "HOGv22_0/out_top_left",
+          "ila_0/probe10"
+        ]
+      },
+      "HOGv22_0_out_top_right": {
+        "ports": [
+          "HOGv22_0/out_top_right",
+          "ila_0/probe11"
         ]
       },
       "axi_dma_0_mm2s_introut": {

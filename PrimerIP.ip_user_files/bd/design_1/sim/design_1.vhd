@@ -1,7 +1,7 @@
 --Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2022.2 (win64) Build 3671981 Fri Oct 14 05:00:03 MDT 2022
---Date        : Mon May  5 14:22:10 2025
+--Date        : Tue May 13 22:35:17 2025
 --Host        : W1125 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -2283,7 +2283,16 @@ architecture STRUCTURE of design_1 is
     probe3 : in STD_LOGIC_VECTOR ( 14 downto 0 );
     probe4 : in STD_LOGIC_VECTOR ( 15 downto 0 );
     probe5 : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    probe6 : in STD_LOGIC_VECTOR ( 24 downto 0 )
+    probe6 : in STD_LOGIC_VECTOR ( 24 downto 0 );
+    probe7 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe8 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe9 : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    probe10 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe11 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe12 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe13 : in STD_LOGIC_VECTOR ( 3 downto 0 );
+    probe14 : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    probe15 : in STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   end component design_1_ila_0_1;
   component design_1_HOGv22_0_6 is
@@ -2297,6 +2306,15 @@ architecture STRUCTURE of design_1 is
     out_final_process : out STD_LOGIC;
     out_ready_histo : out STD_LOGIC;
     out_soma : out STD_LOGIC_VECTOR ( 24 downto 0 );
+    out_celda : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    out_FSM : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    out_Histograma : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    out_top_left : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    out_top_right : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    out_bottom_left : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    out_bottom_right : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    out_cell_x_counter : out STD_LOGIC_VECTOR ( 2 downto 0 );
+    out_cell_y_counter : out STD_LOGIC_VECTOR ( 2 downto 0 );
     s00_axis_tready : out STD_LOGIC;
     s00_axis_tdata : in STD_LOGIC_VECTOR ( 31 downto 0 );
     s00_axis_tstrb : in STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -2313,13 +2331,22 @@ architecture STRUCTURE of design_1 is
   signal HOGv22_0_M00_AXIS_TLAST : STD_LOGIC;
   signal HOGv22_0_M00_AXIS_TREADY : STD_LOGIC;
   signal HOGv22_0_M00_AXIS_TVALID : STD_LOGIC;
+  signal HOGv22_0_out_FSM : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal HOGv22_0_out_Histograma : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal HOGv22_0_out_average : STD_LOGIC_VECTOR ( 15 downto 0 );
   signal HOGv22_0_out_bloque : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal HOGv22_0_out_bottom_left : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal HOGv22_0_out_bottom_right : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal HOGv22_0_out_celda : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal HOGv22_0_out_cell_x_counter : STD_LOGIC_VECTOR ( 2 downto 0 );
+  signal HOGv22_0_out_cell_y_counter : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal HOGv22_0_out_contador : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal HOGv22_0_out_final_process : STD_LOGIC;
   signal HOGv22_0_out_ready_histo : STD_LOGIC;
   signal HOGv22_0_out_soma : STD_LOGIC_VECTOR ( 24 downto 0 );
   signal HOGv22_0_out_start_bin : STD_LOGIC;
+  signal HOGv22_0_out_top_left : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal HOGv22_0_out_top_right : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_dma_0_M_AXIS_MM2S_TDATA : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal axi_dma_0_M_AXIS_MM2S_TLAST : STD_LOGIC;
   signal axi_dma_0_M_AXIS_MM2S_TREADY : STD_LOGIC;
@@ -2521,13 +2548,22 @@ HOGv22_0: component design_1_HOGv22_0_6
       m00_axis_tready => HOGv22_0_M00_AXIS_TREADY,
       m00_axis_tstrb(3 downto 0) => NLW_HOGv22_0_m00_axis_tstrb_UNCONNECTED(3 downto 0),
       m00_axis_tvalid => HOGv22_0_M00_AXIS_TVALID,
+      out_FSM(3 downto 0) => HOGv22_0_out_FSM(3 downto 0),
+      out_Histograma(31 downto 0) => HOGv22_0_out_Histograma(31 downto 0),
       out_average(15 downto 0) => HOGv22_0_out_average(15 downto 0),
       out_bloque(3 downto 0) => HOGv22_0_out_bloque(3 downto 0),
+      out_bottom_left(3 downto 0) => HOGv22_0_out_bottom_left(3 downto 0),
+      out_bottom_right(3 downto 0) => HOGv22_0_out_bottom_right(3 downto 0),
+      out_celda(3 downto 0) => HOGv22_0_out_celda(3 downto 0),
+      out_cell_x_counter(2 downto 0) => HOGv22_0_out_cell_x_counter(2 downto 0),
+      out_cell_y_counter(2 downto 0) => HOGv22_0_out_cell_y_counter(2 downto 0),
       out_contador(14 downto 0) => HOGv22_0_out_contador(14 downto 0),
       out_final_process => HOGv22_0_out_final_process,
       out_ready_histo => HOGv22_0_out_ready_histo,
       out_soma(24 downto 0) => HOGv22_0_out_soma(24 downto 0),
       out_start_bin => HOGv22_0_out_start_bin,
+      out_top_left(3 downto 0) => HOGv22_0_out_top_left(3 downto 0),
+      out_top_right(3 downto 0) => HOGv22_0_out_top_right(3 downto 0),
       s00_axis_tdata(31 downto 0) => axi_dma_0_M_AXIS_MM2S_TDATA(31 downto 0),
       s00_axis_tlast => axi_dma_0_M_AXIS_MM2S_TLAST,
       s00_axis_tready => axi_dma_0_M_AXIS_MM2S_TREADY,
@@ -2683,11 +2719,20 @@ ila_0: component design_1_ila_0_1
       clk => processing_system7_0_FCLK_CLK0,
       probe0(0) => HOGv22_0_out_ready_histo,
       probe1(0) => HOGv22_0_out_final_process,
+      probe10(3 downto 0) => HOGv22_0_out_top_left(3 downto 0),
+      probe11(3 downto 0) => HOGv22_0_out_top_right(3 downto 0),
+      probe12(3 downto 0) => HOGv22_0_out_bottom_left(3 downto 0),
+      probe13(3 downto 0) => HOGv22_0_out_bottom_right(3 downto 0),
+      probe14(2 downto 0) => HOGv22_0_out_cell_x_counter(2 downto 0),
+      probe15(2 downto 0) => HOGv22_0_out_cell_y_counter(2 downto 0),
       probe2(0) => HOGv22_0_out_start_bin,
       probe3(14 downto 0) => HOGv22_0_out_contador(14 downto 0),
       probe4(15 downto 0) => HOGv22_0_out_average(15 downto 0),
       probe5(3 downto 0) => HOGv22_0_out_bloque(3 downto 0),
-      probe6(24 downto 0) => HOGv22_0_out_soma(24 downto 0)
+      probe6(24 downto 0) => HOGv22_0_out_soma(24 downto 0),
+      probe7(3 downto 0) => HOGv22_0_out_celda(3 downto 0),
+      probe8(3 downto 0) => HOGv22_0_out_FSM(3 downto 0),
+      probe9(31 downto 0) => HOGv22_0_out_Histograma(31 downto 0)
     );
 processing_system7_0: component design_1_processing_system7_0_0
      port map (
